@@ -2,7 +2,7 @@ import json
 import os
 import time
 
-from laya import RLAgent
+import laya
 
 BRANDS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "brands.json")
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "db")
@@ -28,31 +28,60 @@ def retrieve(brief_dict, k=15):
     return creators
 
 
-def score_laya(agent, brief, creator):
-    state = f"Brand: {brief.get('brand_name', '')}. Brief: {brief.get('brief_text', '')}. Creator: {creator.get('name', '')}, handle: {creator.get('handle', '')}, niche: {creator.get('niche', [])}, audience: {creator.get('audience_age', '')} in {creator.get('audience_geo', [])}, past brands: {creator.get('past_brand_categories', [])}, content style: {creator.get('content_style', '')}."
-
-    questions = {
+# Question schema defined once, reused for every pair — don't rebuild inside the hot loop.
+def build_questions(brief, creator):
+    return {
         "niche_match": {
             "type": "noul",
-            "instructions": f"Is the creator's niche a match for the brand's target niche? Brand niche: {brief.get('target_niche', [])}, creator niche: {creator.get('niche', [])}",
+            "instructions": (
+                f"Is the creator's niche a match for the brand's target niche? "
+                f"Brand niche: {brief.get('target_niche', [])}, creator niche: {creator.get('niche', [])}"
+            ),
         },
         "audience_match": {
             "type": "noul",
-            "instructions": f"Is the creator's audience a match for the brand's target audience? Brand targets {brief.get('target_age', '')} in {brief.get('target_geo', [])}, creator audience is {creator.get('audience_age', '')} in {creator.get('audience_geo', [])}",
+            "instructions": (
+                f"Is the creator's audience a match for the brand's target audience? "
+                f"Brand targets {brief.get('target_age', '')} in {brief.get('target_geo', [])}, "
+                f"creator audience is {creator.get('audience_age', '')} in {creator.get('audience_geo', [])}"
+            ),
         },
         "budget_fit": {
             "type": "noul",
-            "instructions": f"Does the creator fit the brand's budget tier? Brand budget tier: {brief.get('budget_tier', '')}, creator followers: {creator.get('followers', 0)}",
+            "instructions": (
+                f"Does the creator fit the brand's budget tier? "
+                f"Brand budget tier: {brief.get('budget_tier', '')}, creator followers: {creator.get('followers', 0)}"
+            ),
         },
         "overall_fit": {
             "type": "choice",
             "instructions": "What is the overall fit between this creator and the brand?",
-            "criteria": {"good": "Strong fit across all dimensions", "maybe": "Partial fit, some gaps", "poor": "Poor fit"},
+            "criteria": {
+                "good": "Strong fit across all dimensions",
+                "maybe": "Partial fit, some gaps",
+                "poor": "Poor fit",
+            },
         },
     }
 
+
+def score_laya(agent, brief, creator):
+    """agent must be a pre-loaded laya.load(...) object — never load inside this function."""
+    state = {
+        "brand_name": brief.get("brand_name", ""),
+        "brief_text": brief.get("brief_text", ""),
+        "creator_name": creator.get("name", ""),
+        "creator_handle": creator.get("handle", ""),
+        "creator_niche": creator.get("niche", []),
+        "creator_audience_age": creator.get("audience_age", ""),
+        "creator_audience_geo": creator.get("audience_geo", []),
+        "past_brand_categories": creator.get("past_brand_categories", []),
+        "content_style": creator.get("content_style", ""),
+    }
+    questions = build_questions(brief, creator)
+
     t0 = time.time()
-    result = agent.predict(state=state, questions=questions)
+    result = agent.predict(state, questions)
     latency = time.time() - t0
 
     return result, latency
@@ -63,10 +92,15 @@ if __name__ == "__main__":
         brands = json.load(f)
 
     brief = brands[0]
-    agent = RLAgent(model_id_or_path="convaiinnovations/laya")
+
+    # Load ONCE, outside any loop. This is the ~76s cost — it should happen exactly once per process.
+    t_load = time.time()
+    agent = laya.load("convaiinnovations/laya")
+    print(f"model loaded in {time.time() - t_load:.1f}s")
+
     pairs = retrieve(brief, k=15)
 
-    total_latency = 0
+    total_latency = 0.0
     for pair in pairs:
         creator = pair["creator"]
         result, latency = score_laya(agent, brief, creator)
@@ -82,7 +116,8 @@ if __name__ == "__main__":
         print(
             f"{creator['creator_id']} {creator['name']}: "
             f"noul={noul_scores} overall={overall} "
-            f"latency={latency:.3f}s"
+            f"latency={latency*1000:.1f}ms"
         )
 
-    print(f"\nTotal latency: {total_latency:.3f}s for {len(pairs)} pairs")
+    print(f"\nTotal latency: {total_latency:.3f}s for {len(pairs)} pairs "
+          f"(avg {total_latency/len(pairs)*1000:.1f}ms/pair)")
