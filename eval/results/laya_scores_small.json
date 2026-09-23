@@ -1,0 +1,552 @@
+[
+  {
+    "brief_id": "b01",
+    "creator_id": "c410",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8235,
+      "audience_match": 0.704,
+      "budget_fit": 0.4856
+    },
+    "latency": 11.972976922988892
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c036",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8296,
+      "audience_match": 0.845,
+      "budget_fit": 0.334
+    },
+    "latency": 8.568732976913452
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c068",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8858,
+      "audience_match": 0.8577,
+      "budget_fit": 0.4915
+    },
+    "latency": 12.34091305732727
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c014",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8646,
+      "audience_match": 0.8826,
+      "budget_fit": 0.6194
+    },
+    "latency": 15.55014705657959
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c428",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.9248,
+      "audience_match": 0.7856,
+      "budget_fit": 0.4875
+    },
+    "latency": 14.609746932983398
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c405",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8846,
+      "audience_match": 0.7703,
+      "budget_fit": 0.7227
+    },
+    "latency": 14.78140902519226
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c459",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7662,
+      "audience_match": 0.805,
+      "budget_fit": 0.5046
+    },
+    "latency": 11.591100215911865
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c257",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.4446,
+      "audience_match": 0.7647,
+      "budget_fit": 0.3317
+    },
+    "latency": 8.351222038269043
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c086",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.6555,
+      "audience_match": 0.7235,
+      "budget_fit": 0.4556
+    },
+    "latency": 8.204956293106079
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c064",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7718,
+      "audience_match": 0.7731,
+      "budget_fit": 0.589
+    },
+    "latency": 7.376422882080078
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c238",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8305,
+      "audience_match": 0.7947,
+      "budget_fit": 0.5802
+    },
+    "latency": 7.358424663543701
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c229",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8372,
+      "audience_match": 0.744,
+      "budget_fit": 0.5924
+    },
+    "latency": 11.74279499053955
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c491",
+    "laya_score": "maybe",
+    "noul_scores": {
+      "niche_match": 0.8169,
+      "audience_match": 0.6962,
+      "budget_fit": 0.147
+    },
+    "latency": 9.92850399017334
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c430",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8967,
+      "audience_match": 0.7157,
+      "budget_fit": 0.6687
+    },
+    "latency": 11.160269737243652
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c060",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.9247,
+      "audience_match": 0.7714,
+      "budget_fit": 0.4499
+    },
+    "latency": 9.030132055282593
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c229",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7942,
+      "audience_match": 0.7032,
+      "budget_fit": 0.5871
+    },
+    "latency": 8.524365901947021
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c461",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8189,
+      "audience_match": 0.8491,
+      "budget_fit": 0.4133
+    },
+    "latency": 7.462762117385864
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c341",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7234,
+      "audience_match": 0.8152,
+      "budget_fit": 0.5688
+    },
+    "latency": 8.193535089492798
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c430",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7991,
+      "audience_match": 0.8001,
+      "budget_fit": 0.4702
+    },
+    "latency": 6.981713056564331
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c359",
+    "laya_score": "maybe",
+    "noul_scores": {
+      "niche_match": 0.7648,
+      "audience_match": 0.6809,
+      "budget_fit": 0.3403
+    },
+    "latency": 6.8702170848846436
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c035",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8388,
+      "audience_match": 0.7564,
+      "budget_fit": 0.4369
+    },
+    "latency": 7.498450994491577
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c432",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7581,
+      "audience_match": 0.6324,
+      "budget_fit": 0.3491
+    },
+    "latency": 7.381036043167114
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c484",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8341,
+      "audience_match": 0.7312,
+      "budget_fit": 0.6042
+    },
+    "latency": 7.170415878295898
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c037",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8369,
+      "audience_match": 0.7967,
+      "budget_fit": 0.3946
+    },
+    "latency": 6.848712921142578
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c102",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.783,
+      "audience_match": 0.7859,
+      "budget_fit": 0.5419
+    },
+    "latency": 6.904767274856567
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c214",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.693,
+      "audience_match": 0.7836,
+      "budget_fit": 0.4552
+    },
+    "latency": 7.673809051513672
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c229",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.836,
+      "audience_match": 0.6321,
+      "budget_fit": 0.5367
+    },
+    "latency": 7.665158987045288
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c430",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8002,
+      "audience_match": 0.7187,
+      "budget_fit": 0.4897
+    },
+    "latency": 7.533344984054565
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c461",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8206,
+      "audience_match": 0.807,
+      "budget_fit": 0.5779
+    },
+    "latency": 7.703520059585571
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c090",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.825,
+      "audience_match": 0.7943,
+      "budget_fit": 0.6298
+    },
+    "latency": 7.676849842071533
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c334",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7608,
+      "audience_match": 0.7525,
+      "budget_fit": 0.2635
+    },
+    "latency": 7.193007230758667
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c487",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7587,
+      "audience_match": 0.7448,
+      "budget_fit": 0.2992
+    },
+    "latency": 7.115035057067871
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c149",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8322,
+      "audience_match": 0.7238,
+      "budget_fit": 0.391
+    },
+    "latency": 10.313668966293335
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c194",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7891,
+      "audience_match": 0.7784,
+      "budget_fit": 0.5029
+    },
+    "latency": 8.845268964767456
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c382",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7675,
+      "audience_match": 0.7573,
+      "budget_fit": 0.3599
+    },
+    "latency": 105.57322788238525
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c004",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.5329,
+      "audience_match": 0.7363,
+      "budget_fit": 0.2831
+    },
+    "latency": 15.275439977645874
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c487",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.6047,
+      "audience_match": 0.7599,
+      "budget_fit": 0.2513
+    },
+    "latency": 9.287034034729004
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c149",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8149,
+      "audience_match": 0.8113,
+      "budget_fit": 0.4782
+    },
+    "latency": 9.12376093864441
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c334",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.6363,
+      "audience_match": 0.7371,
+      "budget_fit": 0.1941
+    },
+    "latency": 12.248001098632812
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c436",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7073,
+      "audience_match": 0.8085,
+      "budget_fit": 0.2956
+    },
+    "latency": 10.040228843688965
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c233",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8323,
+      "audience_match": 0.7405,
+      "budget_fit": 0.5873
+    },
+    "latency": 13.085670232772827
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c432",
+    "laya_score": "maybe",
+    "noul_scores": {
+      "niche_match": 0.8198,
+      "audience_match": 0.7231,
+      "budget_fit": 0.5223
+    },
+    "latency": 11.050175189971924
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c158",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8629,
+      "audience_match": 0.7645,
+      "budget_fit": 0.5919
+    },
+    "latency": 8.355998992919922
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c460",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8777,
+      "audience_match": 0.8031,
+      "budget_fit": 0.7083
+    },
+    "latency": 8.031574010848999
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c103",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.8442,
+      "audience_match": 0.8345,
+      "budget_fit": 0.6995
+    },
+    "latency": 8.052808284759521
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c338",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7594,
+      "audience_match": 0.7783,
+      "budget_fit": 0.3433
+    },
+    "latency": 9.47957706451416
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c079",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7129,
+      "audience_match": 0.7145,
+      "budget_fit": 0.3033
+    },
+    "latency": 8.993534088134766
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c173",
+    "laya_score": "good",
+    "noul_scores": {
+      "niche_match": 0.7503,
+      "audience_match": 0.7245,
+      "budget_fit": 0.2159
+    },
+    "latency": 10.726577043533325
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c160",
+    "laya_score": "maybe",
+    "noul_scores": {
+      "niche_match": 0.319,
+      "audience_match": 0.4701,
+      "budget_fit": 0.1449
+    },
+    "latency": 8.482743740081787
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c280",
+    "laya_score": "maybe",
+    "noul_scores": {
+      "niche_match": 0.8131,
+      "audience_match": 0.8005,
+      "budget_fit": 0.6477
+    },
+    "latency": 8.162328004837036
+  }
+]

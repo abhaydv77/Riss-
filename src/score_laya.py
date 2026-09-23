@@ -126,3 +126,6 @@ def main():
         json.dump(all_scores, f, indent=2)
 
     print(f"\nSaved {len(all_scores)} scores -> {OUT_PATH}")
+
+if __name__ == "__main__":
+    main()

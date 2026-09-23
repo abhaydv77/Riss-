@@ -1,0 +1,452 @@
+[
+  {
+    "brief_id": "b01",
+    "creator_id": "c410",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 613.1
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c036",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 260.0
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c068",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 209.7
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c014",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 204.5
+  },
+  {
+    "brief_id": "b01",
+    "creator_id": "c428",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 219.4
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c405",
+    "niche_match": true,
+    "audience_match": true,
+    "budget_fit": true,
+    "overall_fit": "good",
+    "latency_ms": 199.0
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c459",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 1267.4
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c257",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "maybe",
+    "latency_ms": 3061.4
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c086",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2348.4
+  },
+  {
+    "brief_id": "b22",
+    "creator_id": "c064",
+    "niche_match": true,
+    "audience_match": true,
+    "budget_fit": true,
+    "overall_fit": "good",
+    "latency_ms": 2258.8
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c238",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2259.1
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c229",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2274.7
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c491",
+    "niche_match": false,
+    "audience_match": true,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2258.6
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c430",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2318.0
+  },
+  {
+    "brief_id": "b13",
+    "creator_id": "c060",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2257.7
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c229",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2392.2
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c461",
+    "niche_match": false,
+    "audience_match": true,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2289.5
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c341",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2309.6
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c430",
+    "niche_match": false,
+    "audience_match": true,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2322.1
+  },
+  {
+    "brief_id": "b19",
+    "creator_id": "c359",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 2283.2
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c035",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2292.0
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c432",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2314.5
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c484",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2258.8
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c037",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2281.1
+  },
+  {
+    "brief_id": "b14",
+    "creator_id": "c102",
+    "niche_match": true,
+    "audience_match": true,
+    "budget_fit": true,
+    "overall_fit": "good",
+    "latency_ms": 2269.8
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c214",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2300.9
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c229",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2256.6
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c430",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "maybe",
+    "latency_ms": 2339.7
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c461",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2303.6
+  },
+  {
+    "brief_id": "b39",
+    "creator_id": "c090",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2260.0
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c334",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2277.7
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c487",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2286.2
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c149",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "maybe",
+    "latency_ms": 33210.7
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c194",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 211.3
+  },
+  {
+    "brief_id": "b05",
+    "creator_id": "c382",
+    "niche_match": true,
+    "audience_match": true,
+    "budget_fit": true,
+    "overall_fit": "good",
+    "latency_ms": 205.5
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c004",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 215.2
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c487",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 210.4
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c149",
+    "niche_match": true,
+    "audience_match": true,
+    "budget_fit": true,
+    "overall_fit": "good",
+    "latency_ms": 197.5
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c334",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 198.0
+  },
+  {
+    "brief_id": "b45",
+    "creator_id": "c436",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 204.5
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c233",
+    "niche_match": true,
+    "audience_match": true,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 363.0
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c432",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 208.7
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c158",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 203.5
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c460",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 202.8
+  },
+  {
+    "brief_id": "b06",
+    "creator_id": "c103",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": false,
+    "overall_fit": "poor",
+    "latency_ms": 300.8
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c338",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 202.5
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c079",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 200.6
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c173",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2275.2
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c160",
+    "niche_match": false,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2252.1
+  },
+  {
+    "brief_id": "b47",
+    "creator_id": "c280",
+    "niche_match": true,
+    "audience_match": false,
+    "budget_fit": true,
+    "overall_fit": "poor",
+    "latency_ms": 2282.2
+  }
+]
