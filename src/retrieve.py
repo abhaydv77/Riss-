@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import json
 import os
 import chromadb
@@ -7,7 +9,7 @@ DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)
 COLLECTION_NAME = "creators"
 
 
-def retrieve(brief_dict, k=15):
+def retrieve(brief_dict, k=5):
     client = chromadb.PersistentClient(path=DB_PATH)
     collection = client.get_or_create_collection(name=COLLECTION_NAME)
 
@@ -17,10 +19,7 @@ def retrieve(brief_dict, k=15):
         geo = " ".join(brief_dict.get("target_geo", []))
         query_text = f"{niche} {brief_dict.get('target_age', '')} {geo} {brief_dict.get('tone', '')}".strip()
 
-    results = collection.query(
-        query_texts=[query_text],
-        n_results=k,
-    )
+    results = collection.query(query_texts=[query_text], n_results=k)
 
     creators = []
     for i in range(len(results["ids"][0])):
@@ -37,7 +36,7 @@ if __name__ == "__main__":
         brands = json.load(f)
 
     brief = brands[0]
-    results = retrieve(brief, k=15)
+    results = retrieve(brief, k=5)
 
     print(f"Results for {brief['brand_id']} ({brief['brand_name']}):")
     for r in results:

@@ -1,0 +1,164 @@
+[
+  {
+    "brand_id": "b01",
+    "brand_name": "FashionCo 1",
+    "category": "fashion",
+    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "target_niche": [
+      "fashion",
+      "beauty"
+    ],
+    "target_geo": [
+      "DE",
+      "US"
+    ],
+    "target_age": "18-24",
+    "budget_tier": "macro",
+    "tone": "authentic and warm"
+  },
+  {
+    "brand_id": "b22",
+    "brand_name": "Food_BeverageCo 22",
+    "category": "food & beverage",
+    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "target_niche": [
+      "food"
+    ],
+    "target_geo": [
+      "US",
+      "global"
+    ],
+    "target_age": "25-34",
+    "budget_tier": "mid",
+    "tone": "authentic and warm"
+  },
+  {
+    "brand_id": "b13",
+    "brand_name": "TravelCo 13",
+    "category": "travel",
+    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "target_niche": [
+      "travel",
+      "photography"
+    ],
+    "target_geo": [
+      "US"
+    ],
+    "target_age": "35-44",
+    "budget_tier": "macro",
+    "tone": "trustworthy expert"
+  },
+  {
+    "brand_id": "b19",
+    "brand_name": "Consumer TechCo 19",
+    "category": "consumer tech",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
+    "target_niche": [
+      "tech",
+      "photography"
+    ],
+    "target_geo": [
+      "US"
+    ],
+    "target_age": "45+",
+    "budget_tier": "macro",
+    "tone": "fun gen-z humor"
+  },
+  {
+    "brand_id": "b14",
+    "brand_name": "FintechCo 14",
+    "category": "fintech",
+    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "target_niche": [
+      "finance",
+      "tech"
+    ],
+    "target_geo": [
+      "DE"
+    ],
+    "target_age": "45+",
+    "budget_tier": "mid",
+    "tone": "playful and bold"
+  },
+  {
+    "brand_id": "b39",
+    "brand_name": "Consumer TechCo 39",
+    "category": "consumer tech",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
+    "target_niche": [
+      "tech",
+      "photography"
+    ],
+    "target_geo": [
+      "DE",
+      "UK"
+    ],
+    "target_age": "45+",
+    "budget_tier": "micro",
+    "tone": "luxurious and aspirational"
+  },
+  {
+    "brand_id": "b05",
+    "brand_name": "FitnessCo 5",
+    "category": "fitness",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "target_niche": [
+      "fitness",
+      "sports"
+    ],
+    "target_geo": [
+      "global"
+    ],
+    "target_age": "13-17",
+    "budget_tier": "micro",
+    "tone": "fun gen-z humor"
+  },
+  {
+    "brand_id": "b45",
+    "brand_name": "FitnessCo 45",
+    "category": "fitness",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
+    "target_niche": [
+      "fitness",
+      "sports"
+    ],
+    "target_geo": [
+      "DE"
+    ],
+    "target_age": "13-17",
+    "budget_tier": "micro",
+    "tone": "educational and clear"
+  },
+  {
+    "brand_id": "b06",
+    "brand_name": "GamingCo 6",
+    "category": "gaming",
+    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "target_niche": [
+      "gaming",
+      "tech"
+    ],
+    "target_geo": [
+      "global"
+    ],
+    "target_age": "18-24",
+    "budget_tier": "macro",
+    "tone": "trustworthy expert"
+  },
+  {
+    "brand_id": "b47",
+    "brand_name": "Home_LivingCo 47",
+    "category": "home & living",
+    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
+    "target_niche": [
+      "home-decor",
+      "sustainability"
+    ],
+    "target_geo": [
+      "UK"
+    ],
+    "target_age": "25-34",
+    "budget_tier": "micro",
+    "tone": "fun gen-z humor"
+  }
+]

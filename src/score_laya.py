@@ -4,7 +4,8 @@ import time
 
 import laya
 
-BRANDS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "brands.json")
+BRANDS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "small_brands.json")
+OUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "laya_scores_small.json")
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "db")
 COLLECTION_NAME = "creators"
 
@@ -87,37 +88,41 @@ def score_laya(agent, brief, creator):
     return result, latency
 
 
-if __name__ == "__main__":
+def main():
     with open(BRANDS_PATH) as f:
         brands = json.load(f)
-
-    brief = brands[0]
 
     # Load ONCE, outside any loop. This is the ~76s cost — it should happen exactly once per process.
     t_load = time.time()
     agent = laya.load("convaiinnovations/laya")
     print(f"model loaded in {time.time() - t_load:.1f}s")
 
-    pairs = retrieve(brief, k=15)
+    all_scores = []
+    for brand in brands:
+        results = retrieve(brand, k=5)
+        for r in results:
+            creator = r["creator"]
+            result, latency = score_laya(agent, brand, creator)
+            noul_scores = {
+                "niche_match": result["answers"]["niche_match"]["noul"],
+                "audience_match": result["answers"]["audience_match"]["noul"],
+                "budget_fit": result["answers"]["budget_fit"]["noul"],
+            }
+            overall = result["answers"]["overall_fit"]["choice"]
+            all_scores.append({
+                "brief_id": brand["brand_id"],
+                "creator_id": creator["creator_id"],
+                "laya_score": overall,
+                "noul_scores": noul_scores,
+                "latency": latency,
+            })
+            print(
+                f"{creator['creator_id']} {creator['name']}: "
+                f"noul={noul_scores} overall={overall} "
+                f"latency={latency*1000:.1f}ms"
+            )
 
-    total_latency = 0.0
-    for pair in pairs:
-        creator = pair["creator"]
-        result, latency = score_laya(agent, brief, creator)
-        total_latency += latency
+    with open(OUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(all_scores, f, indent=2)
 
-        noul_scores = {
-            "niche_match": result["answers"]["niche_match"]["noul"],
-            "audience_match": result["answers"]["audience_match"]["noul"],
-            "budget_fit": result["answers"]["budget_fit"]["noul"],
-        }
-        overall = result["answers"]["overall_fit"]["choice"]
-
-        print(
-            f"{creator['creator_id']} {creator['name']}: "
-            f"noul={noul_scores} overall={overall} "
-            f"latency={latency*1000:.1f}ms"
-        )
-
-    print(f"\nTotal latency: {total_latency:.3f}s for {len(pairs)} pairs "
-          f"(avg {total_latency/len(pairs)*1000:.1f}ms/pair)")
+    print(f"\nSaved {len(all_scores)} scores -> {OUT_PATH}")

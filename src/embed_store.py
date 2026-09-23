@@ -1,5 +1,9 @@
+from __future__ import annotations
+
+import argparse
 import json
 import os
+
 import chromadb
 from sentence_transformers import SentenceTransformer
 
@@ -13,7 +17,7 @@ def build_text(creator):
     niche = " ".join(creator.get("niche", []))
     audience = f"{creator.get('audience_age', '')} {' '.join(creator.get('audience_geo', []))}".strip()
     past_brands = " ".join(creator.get("past_brand_categories", []))
-    deliverable_types = creator.get("content_style", "")
+    deliverable_types = " ".join(creator.get("deliverable_types", []))
     return f"{niche} {audience} {past_brands} {deliverable_types}".strip()
 
 
@@ -22,6 +26,10 @@ def main():
         creators = json.load(f)
 
     client = chromadb.PersistentClient(path=DB_PATH)
+    try:
+        client.delete_collection(COLLECTION_NAME)
+    except Exception:
+        pass
     collection = client.get_or_create_collection(name=COLLECTION_NAME)
 
     model = SentenceTransformer(MODEL_NAME)

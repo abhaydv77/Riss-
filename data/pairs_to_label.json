@@ -1,0 +1,883 @@
+[
+  {
+    "brief_id": "b01",
+    "brand_name": "FashionCo 1",
+    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c410",
+    "creator_name": "Priya Brown",
+    "niche": [
+      "beauty",
+      "fitness"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "ES"
+    ],
+    "followers": 98578,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b01",
+    "brand_name": "FashionCo 1",
+    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c036",
+    "creator_name": "Ethan Silva",
+    "niche": [
+      "fashion",
+      "home-decor"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "ES",
+      "UK"
+    ],
+    "followers": 123494,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b01",
+    "brand_name": "FashionCo 1",
+    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c068",
+    "creator_name": "Ben Smith",
+    "niche": [
+      "fashion",
+      "travel"
+    ],
+    "audience_age": "13-17",
+    "audience_geo": [
+      "IN",
+      "UK"
+    ],
+    "followers": 23467,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b01",
+    "brand_name": "FashionCo 1",
+    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c014",
+    "creator_name": "Sofia Tanaka",
+    "niche": [
+      "fashion",
+      "finance"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "FR",
+      "global"
+    ],
+    "followers": 11712,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b01",
+    "brand_name": "FashionCo 1",
+    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c428",
+    "creator_name": "Lena Ali",
+    "niche": [
+      "beauty",
+      "fashion"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "US"
+    ],
+    "followers": 12448,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b22",
+    "brand_name": "Food_BeverageCo 22",
+    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "creator_id": "c405",
+    "creator_name": "Sofia Sharma",
+    "niche": [
+      "food",
+      "travel"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "IN",
+      "US"
+    ],
+    "followers": 8084,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b22",
+    "brand_name": "Food_BeverageCo 22",
+    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "creator_id": "c459",
+    "creator_name": "Aisha Smith",
+    "niche": [
+      "beauty",
+      "food"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "UK",
+      "global"
+    ],
+    "followers": 19992,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b22",
+    "brand_name": "Food_BeverageCo 22",
+    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "creator_id": "c257",
+    "creator_name": "Nora Brown",
+    "niche": [
+      "beauty",
+      "food"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "US"
+    ],
+    "followers": 9832,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b22",
+    "brand_name": "Food_BeverageCo 22",
+    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "creator_id": "c086",
+    "creator_name": "Lena Sharma",
+    "niche": [
+      "beauty",
+      "gaming"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "BR",
+      "US"
+    ],
+    "followers": 35845,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b22",
+    "brand_name": "Food_BeverageCo 22",
+    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "creator_id": "c064",
+    "creator_name": "Diego Smith",
+    "niche": [
+      "food",
+      "photography"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "global"
+    ],
+    "followers": 47406,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b13",
+    "brand_name": "TravelCo 13",
+    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c238",
+    "creator_name": "Kai Patel",
+    "niche": [
+      "finance",
+      "travel"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "IN"
+    ],
+    "followers": 24828,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b13",
+    "brand_name": "TravelCo 13",
+    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c229",
+    "creator_name": "Elena Sharma",
+    "niche": [
+      "gaming",
+      "photography"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "US",
+      "global"
+    ],
+    "followers": 35475,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b13",
+    "brand_name": "TravelCo 13",
+    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c491",
+    "creator_name": "Finn Sharma",
+    "niche": [
+      "home-decor",
+      "photography"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "IN",
+      "US"
+    ],
+    "followers": 7092,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b13",
+    "brand_name": "TravelCo 13",
+    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c430",
+    "creator_name": "Dev Muller",
+    "niche": [
+      "photography",
+      "travel"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "US",
+      "global"
+    ],
+    "followers": 37293,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b13",
+    "brand_name": "TravelCo 13",
+    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c060",
+    "creator_name": "Lucas Rossi",
+    "niche": [
+      "photography",
+      "travel"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "DE",
+      "UK"
+    ],
+    "followers": 6460,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b19",
+    "brand_name": "Consumer TechCo 19",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
+    "creator_id": "c229",
+    "creator_name": "Elena Sharma",
+    "niche": [
+      "gaming",
+      "photography"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "US",
+      "global"
+    ],
+    "followers": 35475,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b19",
+    "brand_name": "Consumer TechCo 19",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
+    "creator_id": "c461",
+    "creator_name": "Tom Ali",
+    "niche": [
+      "photography",
+      "sustainability"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "US"
+    ],
+    "followers": 38637,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b19",
+    "brand_name": "Consumer TechCo 19",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
+    "creator_id": "c341",
+    "creator_name": "Leo Rossi",
+    "niche": [
+      "fashion",
+      "gaming"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "global"
+    ],
+    "followers": 4264,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b19",
+    "brand_name": "Consumer TechCo 19",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
+    "creator_id": "c430",
+    "creator_name": "Dev Muller",
+    "niche": [
+      "photography",
+      "travel"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "US",
+      "global"
+    ],
+    "followers": 37293,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b19",
+    "brand_name": "Consumer TechCo 19",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
+    "creator_id": "c359",
+    "creator_name": "Leo Khan",
+    "niche": [
+      "gaming",
+      "photography"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "global"
+    ],
+    "followers": 57645,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b14",
+    "brand_name": "FintechCo 14",
+    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "creator_id": "c035",
+    "creator_name": "Ivy Haddad",
+    "niche": [
+      "food",
+      "tech"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "IN"
+    ],
+    "followers": 11988,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b14",
+    "brand_name": "FintechCo 14",
+    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "creator_id": "c432",
+    "creator_name": "Diego Dubois",
+    "niche": [
+      "gaming",
+      "tech"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "IN",
+      "US"
+    ],
+    "followers": 33198,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b14",
+    "brand_name": "FintechCo 14",
+    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "creator_id": "c484",
+    "creator_name": "Lucas Chen",
+    "niche": [
+      "finance",
+      "tech"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "UK",
+      "US"
+    ],
+    "followers": 18197,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b14",
+    "brand_name": "FintechCo 14",
+    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "creator_id": "c037",
+    "creator_name": "Dev Patel",
+    "niche": [
+      "fashion",
+      "gaming"
+    ],
+    "audience_age": "13-17",
+    "audience_geo": [
+      "BR",
+      "FR"
+    ],
+    "followers": 12979,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b14",
+    "brand_name": "FintechCo 14",
+    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "creator_id": "c102",
+    "creator_name": "Liam Muller",
+    "niche": [
+      "finance",
+      "travel"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "DE"
+    ],
+    "followers": 4828,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b39",
+    "brand_name": "Consumer TechCo 39",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c214",
+    "creator_name": "Noah Chen",
+    "niche": [
+      "fashion",
+      "sustainability"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "IN",
+      "UK"
+    ],
+    "followers": 16921,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b39",
+    "brand_name": "Consumer TechCo 39",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c229",
+    "creator_name": "Elena Sharma",
+    "niche": [
+      "gaming",
+      "photography"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "US",
+      "global"
+    ],
+    "followers": 35475,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b39",
+    "brand_name": "Consumer TechCo 39",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c430",
+    "creator_name": "Dev Muller",
+    "niche": [
+      "photography",
+      "travel"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "US",
+      "global"
+    ],
+    "followers": 37293,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b39",
+    "brand_name": "Consumer TechCo 39",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c461",
+    "creator_name": "Tom Ali",
+    "niche": [
+      "photography",
+      "sustainability"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "US"
+    ],
+    "followers": 38637,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b39",
+    "brand_name": "Consumer TechCo 39",
+    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c090",
+    "creator_name": "Kai Smith",
+    "niche": [
+      "photography",
+      "skincare"
+    ],
+    "audience_age": "45+",
+    "audience_geo": [
+      "ES"
+    ],
+    "followers": 54115,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b05",
+    "brand_name": "FitnessCo 5",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c334",
+    "creator_name": "Hana Costa",
+    "niche": [
+      "beauty",
+      "fitness"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "FR",
+      "IN"
+    ],
+    "followers": 8103,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b05",
+    "brand_name": "FitnessCo 5",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c487",
+    "creator_name": "Ben Tanaka",
+    "niche": [
+      "beauty",
+      "sports"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "BR",
+      "DE"
+    ],
+    "followers": 49947,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b05",
+    "brand_name": "FitnessCo 5",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c149",
+    "creator_name": "Kai Rossi",
+    "niche": [
+      "fitness",
+      "travel"
+    ],
+    "audience_age": "13-17",
+    "audience_geo": [
+      "DE",
+      "FR"
+    ],
+    "followers": 26172,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b05",
+    "brand_name": "FitnessCo 5",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c194",
+    "creator_name": "Omar Smith",
+    "niche": [
+      "home-decor",
+      "sports"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "US"
+    ],
+    "followers": 61703,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b05",
+    "brand_name": "FitnessCo 5",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "creator_id": "c382",
+    "creator_name": "Dev Tanaka",
+    "niche": [
+      "fitness",
+      "sustainability"
+    ],
+    "audience_age": "13-17",
+    "audience_geo": [
+      "FR",
+      "US"
+    ],
+    "followers": 26058,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b45",
+    "brand_name": "FitnessCo 45",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
+    "creator_id": "c004",
+    "creator_name": "Ethan Patel",
+    "niche": [
+      "beauty",
+      "fitness"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "ES"
+    ],
+    "followers": 13061,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b45",
+    "brand_name": "FitnessCo 45",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
+    "creator_id": "c487",
+    "creator_name": "Ben Tanaka",
+    "niche": [
+      "beauty",
+      "sports"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "BR",
+      "DE"
+    ],
+    "followers": 49947,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b45",
+    "brand_name": "FitnessCo 45",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
+    "creator_id": "c149",
+    "creator_name": "Kai Rossi",
+    "niche": [
+      "fitness",
+      "travel"
+    ],
+    "audience_age": "13-17",
+    "audience_geo": [
+      "DE",
+      "FR"
+    ],
+    "followers": 26172,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b45",
+    "brand_name": "FitnessCo 45",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
+    "creator_id": "c334",
+    "creator_name": "Hana Costa",
+    "niche": [
+      "beauty",
+      "fitness"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "FR",
+      "IN"
+    ],
+    "followers": 8103,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b45",
+    "brand_name": "FitnessCo 45",
+    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
+    "creator_id": "c436",
+    "creator_name": "Ethan Sharma",
+    "niche": [
+      "fashion",
+      "tech"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "DE",
+      "IN"
+    ],
+    "followers": 11327,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b06",
+    "brand_name": "GamingCo 6",
+    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c233",
+    "creator_name": "Ben Sharma",
+    "niche": [
+      "fitness",
+      "gaming"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "IN",
+      "global"
+    ],
+    "followers": 13960,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b06",
+    "brand_name": "GamingCo 6",
+    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c432",
+    "creator_name": "Diego Dubois",
+    "niche": [
+      "gaming",
+      "tech"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "IN",
+      "US"
+    ],
+    "followers": 33198,
+    "rate_range_inr": "₹1500000–₹5000000"
+  },
+  {
+    "brief_id": "b06",
+    "brand_name": "GamingCo 6",
+    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c158",
+    "creator_name": "Ava Smith",
+    "niche": [
+      "gaming",
+      "travel"
+    ],
+    "audience_age": "13-17",
+    "audience_geo": [
+      "IN"
+    ],
+    "followers": 21643,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b06",
+    "brand_name": "GamingCo 6",
+    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c460",
+    "creator_name": "Chloe Tanaka",
+    "niche": [
+      "fashion",
+      "finance"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "ES"
+    ],
+    "followers": 86519,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b06",
+    "brand_name": "GamingCo 6",
+    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c103",
+    "creator_name": "Priya Smith",
+    "niche": [
+      "gaming",
+      "home-decor"
+    ],
+    "audience_age": "18-24",
+    "audience_geo": [
+      "BR",
+      "ES"
+    ],
+    "followers": 9706,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b47",
+    "brand_name": "Home_LivingCo 47",
+    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c338",
+    "creator_name": "Lucas Silva",
+    "niche": [
+      "home-decor",
+      "travel"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "global"
+    ],
+    "followers": 17067,
+    "rate_range_inr": "₹500000–₹1500000"
+  },
+  {
+    "brief_id": "b47",
+    "brand_name": "Home_LivingCo 47",
+    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c079",
+    "creator_name": "Elena Sharma",
+    "niche": [
+      "gaming",
+      "home-decor"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "UK",
+      "US"
+    ],
+    "followers": 25629,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b47",
+    "brand_name": "Home_LivingCo 47",
+    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c173",
+    "creator_name": "Hana Nguyen",
+    "niche": [
+      "beauty",
+      "home-decor"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "global"
+    ],
+    "followers": 10186,
+    "rate_range_inr": "₹200000–₹500000"
+  },
+  {
+    "brief_id": "b47",
+    "brand_name": "Home_LivingCo 47",
+    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c160",
+    "creator_name": "Nora Costa",
+    "niche": [
+      "beauty",
+      "home-decor"
+    ],
+    "audience_age": "35-44",
+    "audience_geo": [
+      "IN",
+      "US"
+    ],
+    "followers": 68709,
+    "rate_range_inr": "₹50000–₹200000"
+  },
+  {
+    "brief_id": "b47",
+    "brand_name": "Home_LivingCo 47",
+    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
+    "creator_id": "c280",
+    "creator_name": "Zoe Rossi",
+    "niche": [
+      "home-decor",
+      "sustainability"
+    ],
+    "audience_age": "25-34",
+    "audience_geo": [
+      "FR"
+    ],
+    "followers": 25123,
+    "rate_range_inr": "₹1500000–₹5000000"
+  }
+]
