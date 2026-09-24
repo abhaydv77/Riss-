@@ -4,7 +4,7 @@ import time
 
 import laya
 
-BRANDS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "small_brands.json")
+BRANDS_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "brands.json")
 OUT_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "laya_scores_small.json")
 DB_PATH = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "db")
 COLLECTION_NAME = "creators"

@@ -1,822 +1,242 @@
 [
   {
     "brand_id": "b01",
-    "brand_name": "FashionCo 1",
-    "category": "fashion",
-    "brief_text": "Launch campaign for fashion targeting 18-24 in DE/US. Looking for fashion, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
+    "brand_name": "PulseFuel",
+    "category": "fitness",
+    "brief_text": "Launch a high-energy fitness campaign for 18-24 audiences in India, using authentic workout content and motivating routines. The tone should feel energetic, relatable, and achievable.",
     "target_niche": [
-      "fashion",
-      "beauty"
+      "fitness"
     ],
     "target_geo": [
-      "DE",
-      "US"
+      "IN"
     ],
     "target_age": "18-24",
-    "budget_tier": "macro",
-    "tone": "authentic and warm"
+    "budget_tier": "micro",
+    "tone": "energetic and relatable"
   },
   {
     "brand_id": "b02",
-    "brand_name": "Food_BeverageCo 2",
-    "category": "food & beverage",
-    "brief_text": "Launch campaign for food & beverage targeting 25-34 in DE/UK. Looking for food creators with minimal and premium tone. Goal: authentic tutorials that convert.",
+    "brand_name": "Glow Theory",
+    "category": "beauty",
+    "brief_text": "Promote a simple skincare routine for 25-34 audiences in India and the UK through polished but trustworthy beauty content. The tone should be warm, credible, and modern.",
     "target_niche": [
-      "food"
+      "beauty"
     ],
     "target_geo": [
-      "DE",
+      "IN",
       "UK"
     ],
     "target_age": "25-34",
-    "budget_tier": "mid",
-    "tone": "minimal and premium"
+    "budget_tier": "micro",
+    "tone": "warm and credible"
   },
   {
     "brand_id": "b03",
-    "brand_name": "TravelCo 3",
-    "category": "travel",
-    "brief_text": "Launch campaign for travel targeting 35-44 in global. Looking for travel, photography creators with educational and clear tone. Goal: authentic tutorials that convert.",
+    "brand_name": "NovaByte",
+    "category": "tech",
+    "brief_text": "Show how a new productivity device fits into the lives of 18-24 tech enthusiasts in India and Australia. Use practical demos with a smart, approachable tone.",
     "target_niche": [
-      "travel",
-      "photography"
+      "tech"
     ],
     "target_geo": [
-      "global"
+      "IN",
+      "AU"
     ],
-    "target_age": "35-44",
-    "budget_tier": "mid",
-    "tone": "educational and clear"
+    "target_age": "18-24",
+    "budget_tier": "micro",
+    "tone": "smart and approachable"
   },
   {
     "brand_id": "b04",
-    "brand_name": "FintechCo 4",
-    "category": "fintech",
-    "brief_text": "Launch campaign for fintech targeting 45+ in UK/US. Looking for finance, tech creators with luxurious and aspirational tone. Goal: authentic unboxings that convert.",
+    "brand_name": "CasaCrumb",
+    "category": "food",
+    "brief_text": "Create appetizing recipe and tasting content for 25-34 food lovers in India. Keep the campaign authentic, cozy, and visually delicious.",
     "target_niche": [
-      "finance",
-      "tech"
+      "food"
     ],
     "target_geo": [
-      "UK",
-      "US"
+      "IN"
     ],
-    "target_age": "45+",
-    "budget_tier": "macro",
-    "tone": "luxurious and aspirational"
+    "target_age": "25-34",
+    "budget_tier": "micro",
+    "tone": "authentic and cozy"
   },
   {
     "brand_id": "b05",
-    "brand_name": "FitnessCo 5",
-    "category": "fitness",
-    "brief_text": "Launch campaign for fitness targeting 13-17 in global. Looking for fitness, sports creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "brand_name": "Urban Loom",
+    "category": "fashion",
+    "brief_text": "Feature versatile everyday outfits for 18-24 fashion audiences across India and the UK. The content should feel stylish, youthful, and editorial without being distant.",
     "target_niche": [
-      "fitness",
-      "sports"
+      "fashion"
     ],
     "target_geo": [
-      "global"
+      "IN",
+      "UK"
     ],
-    "target_age": "13-17",
-    "budget_tier": "micro",
-    "tone": "fun gen-z humor"
+    "target_age": "18-24",
+    "budget_tier": "mid",
+    "tone": "stylish and youthful"
   },
   {
     "brand_id": "b06",
-    "brand_name": "GamingCo 6",
-    "category": "gaming",
-    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "brand_name": "Roamly",
+    "category": "travel",
+    "brief_text": "Inspire 25-34 travelers in India and Australia with practical city and weekend-trip ideas. Use an authentic travel-vlog style with an adventurous but useful tone.",
     "target_niche": [
-      "gaming",
-      "tech"
+      "travel"
     ],
     "target_geo": [
-      "global"
+      "IN",
+      "AU"
     ],
-    "target_age": "18-24",
-    "budget_tier": "macro",
-    "tone": "trustworthy expert"
+    "target_age": "25-34",
+    "budget_tier": "micro",
+    "tone": "adventurous and useful"
   },
   {
     "brand_id": "b07",
-    "brand_name": "Home_LivingCo 7",
-    "category": "home & living",
-    "brief_text": "Launch campaign for home & living targeting 25-34 in UK/global. Looking for home-decor, sustainability creators with playful and bold tone. Goal: authentic unboxings that convert.",
+    "brand_name": "ArcadeX",
+    "category": "gaming",
+    "brief_text": "Build excitement around competitive gaming for 18-24 audiences in the US and India. Use energetic gameplay-led content with humor and community appeal.",
     "target_niche": [
-      "home-decor",
-      "sustainability"
+      "gaming"
     ],
     "target_geo": [
-      "UK",
-      "global"
+      "US",
+      "IN"
     ],
-    "target_age": "25-34",
-    "budget_tier": "mid",
-    "tone": "playful and bold"
+    "target_age": "18-24",
+    "budget_tier": "micro",
+    "tone": "bold and playful"
   },
   {
     "brand_id": "b08",
-    "brand_name": "BeautyCo 8",
-    "category": "beauty",
-    "brief_text": "Launch campaign for beauty targeting 35-44 in UK/global. Looking for beauty, skincare creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "brand_name": "MoneyMint",
+    "category": "finance",
+    "brief_text": "Make beginner money concepts accessible to 25-34 audiences in India and the UK. The campaign should be educational, transparent, and practical rather than overly salesy.",
     "target_niche": [
-      "beauty",
-      "skincare"
+      "finance"
     ],
     "target_geo": [
-      "UK",
-      "global"
+      "IN",
+      "UK"
     ],
-    "target_age": "35-44",
-    "budget_tier": "macro",
-    "tone": "authentic and warm"
+    "target_age": "25-34",
+    "budget_tier": "micro",
+    "tone": "educational and practical"
   },
   {
     "brand_id": "b09",
-    "brand_name": "Consumer TechCo 9",
-    "category": "consumer tech",
-    "brief_text": "Launch campaign for consumer tech targeting 45+ in global. Looking for tech, photography creators with minimal and premium tone. Goal: authentic reviews that convert.",
+    "brand_name": "Nest & Nook",
+    "category": "home-decor",
+    "brief_text": "Show affordable home styling ideas for 35-44 audiences in India. Content should feel warm, lived-in, and practical, with clear before-and-after inspiration.",
     "target_niche": [
-      "tech",
-      "photography"
+      "home-decor"
     ],
     "target_geo": [
-      "global"
+      "IN"
     ],
-    "target_age": "45+",
-    "budget_tier": "micro",
-    "tone": "minimal and premium"
+    "target_age": "35-44",
+    "budget_tier": "nano",
+    "tone": "warm and practical"
   },
   {
     "brand_id": "b10",
-    "brand_name": "SkincareCo 10",
-    "category": "skincare",
-    "brief_text": "Launch campaign for skincare targeting 13-17 in DE/UK. Looking for skincare, beauty creators with educational and clear tone. Goal: authentic day-in-life that convert.",
+    "brand_name": "LearnLoop",
+    "category": "education",
+    "brief_text": "Share study and career-learning strategies for 18-24 audiences in India and the UK. Use encouraging, clear educational content that feels authentic rather than academic.",
     "target_niche": [
-      "skincare",
-      "beauty"
+      "education"
     ],
     "target_geo": [
-      "DE",
+      "IN",
       "UK"
     ],
-    "target_age": "13-17",
+    "target_age": "18-24",
     "budget_tier": "micro",
-    "tone": "educational and clear"
+    "tone": "encouraging and clear"
   },
   {
     "brand_id": "b11",
-    "brand_name": "FashionCo 11",
-    "category": "fashion",
-    "brief_text": "Launch campaign for fashion targeting 18-24 in UK/US. Looking for fashion, beauty creators with luxurious and aspirational tone. Goal: authentic tutorials that convert.",
+    "brand_name": "ParentPath",
+    "category": "parenting",
+    "brief_text": "Reach 35-44 parents in the US and UK with realistic family routines and helpful product moments. The tone should be empathetic, honest, and reassuring.",
     "target_niche": [
-      "fashion",
-      "beauty"
+      "parenting"
     ],
     "target_geo": [
-      "UK",
-      "US"
+      "US",
+      "UK"
     ],
-    "target_age": "18-24",
-    "budget_tier": "mid",
-    "tone": "luxurious and aspirational"
+    "target_age": "35-44",
+    "budget_tier": "nano",
+    "tone": "empathetic and reassuring"
   },
   {
     "brand_id": "b12",
-    "brand_name": "Food_BeverageCo 12",
-    "category": "food & beverage",
-    "brief_text": "Launch campaign for food & beverage targeting 25-34 in global. Looking for food creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
+    "brand_name": "LaughLab",
+    "category": "comedy",
+    "brief_text": "Create shareable comedic sketches for 18-24 audiences in India and the US. Keep the humor quick, relatable, and energetic.",
     "target_niche": [
-      "food"
+      "comedy"
     ],
     "target_geo": [
-      "global"
+      "IN",
+      "US"
     ],
-    "target_age": "25-34",
-    "budget_tier": "micro",
-    "tone": "fun gen-z humor"
+    "target_age": "18-24",
+    "budget_tier": "mid",
+    "tone": "quick and relatable"
   },
   {
     "brand_id": "b13",
-    "brand_name": "TravelCo 13",
-    "category": "travel",
-    "brief_text": "Launch campaign for travel targeting 35-44 in US. Looking for travel, photography creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
+    "brand_name": "Vivid Studio",
+    "category": "beauty",
+    "brief_text": "Show elevated makeup and beauty looks to 18-24 audiences in the US and UK. Favor polished editorial visuals with a bold, expressive tone.",
     "target_niche": [
-      "travel",
-      "photography"
+      "beauty",
+      "fashion"
     ],
     "target_geo": [
-      "US"
+      "US",
+      "UK"
     ],
-    "target_age": "35-44",
-    "budget_tier": "macro",
-    "tone": "trustworthy expert"
+    "target_age": "18-24",
+    "budget_tier": "mid",
+    "tone": "bold and editorial"
   },
   {
     "brand_id": "b14",
-    "brand_name": "FintechCo 14",
-    "category": "fintech",
-    "brief_text": "Launch campaign for fintech targeting 45+ in DE. Looking for finance, tech creators with playful and bold tone. Goal: authentic reviews that convert.",
+    "brand_name": "LedgerWise",
+    "category": "finance",
+    "brief_text": "Teach responsible investing and budgeting to 35-44 audiences in India and Australia. Use calm, trustworthy explainers with practical examples.",
     "target_niche": [
       "finance",
-      "tech"
+      "education"
     ],
     "target_geo": [
-      "DE"
+      "IN",
+      "AU"
     ],
-    "target_age": "45+",
-    "budget_tier": "mid",
-    "tone": "playful and bold"
+    "target_age": "35-44",
+    "budget_tier": "micro",
+    "tone": "calm and trustworthy"
   },
   {
     "brand_id": "b15",
-    "brand_name": "FitnessCo 15",
-    "category": "fitness",
-    "brief_text": "Launch campaign for fitness targeting 13-17 in DE/US. Looking for fitness, sports creators with authentic and warm tone. Goal: authentic reviews that convert.",
+    "brand_name": "Trail & Table",
+    "category": "travel",
+    "brief_text": "Combine destination discovery with local food experiences for 25-34 audiences in the UK and Australia. Content should feel cinematic, curious, and authentic.",
     "target_niche": [
-      "fitness",
-      "sports"
-    ],
-    "target_geo": [
-      "DE",
-      "US"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "macro",
-    "tone": "authentic and warm"
-  },
-  {
-    "brand_id": "b16",
-    "brand_name": "GamingCo 16",
-    "category": "gaming",
-    "brief_text": "Launch campaign for gaming targeting 18-24 in UK. Looking for gaming, tech creators with minimal and premium tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "gaming",
-      "tech"
-    ],
-    "target_geo": [
-      "UK"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "macro",
-    "tone": "minimal and premium"
-  },
-  {
-    "brand_id": "b17",
-    "brand_name": "Home_LivingCo 17",
-    "category": "home & living",
-    "brief_text": "Launch campaign for home & living targeting 25-34 in UK/US. Looking for home-decor, sustainability creators with educational and clear tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "home-decor",
-      "sustainability"
-    ],
-    "target_geo": [
-      "UK",
-      "US"
-    ],
-    "target_age": "25-34",
-    "budget_tier": "mid",
-    "tone": "educational and clear"
-  },
-  {
-    "brand_id": "b18",
-    "brand_name": "BeautyCo 18",
-    "category": "beauty",
-    "brief_text": "Launch campaign for beauty targeting 35-44 in UK/US. Looking for beauty, skincare creators with luxurious and aspirational tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "beauty",
-      "skincare"
-    ],
-    "target_geo": [
-      "UK",
-      "US"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "micro",
-    "tone": "luxurious and aspirational"
-  },
-  {
-    "brand_id": "b19",
-    "brand_name": "Consumer TechCo 19",
-    "category": "consumer tech",
-    "brief_text": "Launch campaign for consumer tech targeting 45+ in US. Looking for tech, photography creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "tech",
-      "photography"
-    ],
-    "target_geo": [
-      "US"
-    ],
-    "target_age": "45+",
-    "budget_tier": "macro",
-    "tone": "fun gen-z humor"
-  },
-  {
-    "brand_id": "b20",
-    "brand_name": "SkincareCo 20",
-    "category": "skincare",
-    "brief_text": "Launch campaign for skincare targeting 13-17 in US. Looking for skincare, beauty creators with trustworthy expert tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "skincare",
-      "beauty"
-    ],
-    "target_geo": [
-      "US"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "micro",
-    "tone": "trustworthy expert"
-  },
-  {
-    "brand_id": "b21",
-    "brand_name": "FashionCo 21",
-    "category": "fashion",
-    "brief_text": "Launch campaign for fashion targeting 18-24 in global. Looking for fashion, beauty creators with playful and bold tone. Goal: authentic reviews that convert.",
-    "target_niche": [
-      "fashion",
-      "beauty"
-    ],
-    "target_geo": [
-      "global"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "macro",
-    "tone": "playful and bold"
-  },
-  {
-    "brand_id": "b22",
-    "brand_name": "Food_BeverageCo 22",
-    "category": "food & beverage",
-    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US/global. Looking for food creators with authentic and warm tone. Goal: authentic reviews that convert.",
-    "target_niche": [
+      "travel",
       "food"
     ],
     "target_geo": [
-      "US",
-      "global"
-    ],
-    "target_age": "25-34",
-    "budget_tier": "mid",
-    "tone": "authentic and warm"
-  },
-  {
-    "brand_id": "b23",
-    "brand_name": "TravelCo 23",
-    "category": "travel",
-    "brief_text": "Launch campaign for travel targeting 35-44 in US/global. Looking for travel, photography creators with minimal and premium tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "travel",
-      "photography"
-    ],
-    "target_geo": [
-      "US",
-      "global"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "macro",
-    "tone": "minimal and premium"
-  },
-  {
-    "brand_id": "b24",
-    "brand_name": "FintechCo 24",
-    "category": "fintech",
-    "brief_text": "Launch campaign for fintech targeting 45+ in DE/global. Looking for finance, tech creators with educational and clear tone. Goal: authentic reviews that convert.",
-    "target_niche": [
-      "finance",
-      "tech"
-    ],
-    "target_geo": [
-      "DE",
-      "global"
-    ],
-    "target_age": "45+",
-    "budget_tier": "mid",
-    "tone": "educational and clear"
-  },
-  {
-    "brand_id": "b25",
-    "brand_name": "FitnessCo 25",
-    "category": "fitness",
-    "brief_text": "Launch campaign for fitness targeting 13-17 in US. Looking for fitness, sports creators with luxurious and aspirational tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "fitness",
-      "sports"
-    ],
-    "target_geo": [
-      "US"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "micro",
-    "tone": "luxurious and aspirational"
-  },
-  {
-    "brand_id": "b26",
-    "brand_name": "GamingCo 26",
-    "category": "gaming",
-    "brief_text": "Launch campaign for gaming targeting 18-24 in UK. Looking for gaming, tech creators with fun gen-z humor tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "gaming",
-      "tech"
-    ],
-    "target_geo": [
-      "UK"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "mid",
-    "tone": "fun gen-z humor"
-  },
-  {
-    "brand_id": "b27",
-    "brand_name": "Home_LivingCo 27",
-    "category": "home & living",
-    "brief_text": "Launch campaign for home & living targeting 25-34 in DE/UK. Looking for home-decor, sustainability creators with trustworthy expert tone. Goal: authentic reviews that convert.",
-    "target_niche": [
-      "home-decor",
-      "sustainability"
-    ],
-    "target_geo": [
-      "DE",
-      "UK"
-    ],
-    "target_age": "25-34",
-    "budget_tier": "macro",
-    "tone": "trustworthy expert"
-  },
-  {
-    "brand_id": "b28",
-    "brand_name": "BeautyCo 28",
-    "category": "beauty",
-    "brief_text": "Launch campaign for beauty targeting 35-44 in DE/global. Looking for beauty, skincare creators with playful and bold tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "beauty",
-      "skincare"
-    ],
-    "target_geo": [
-      "DE",
-      "global"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "mid",
-    "tone": "playful and bold"
-  },
-  {
-    "brand_id": "b29",
-    "brand_name": "Consumer TechCo 29",
-    "category": "consumer tech",
-    "brief_text": "Launch campaign for consumer tech targeting 45+ in UK/US. Looking for tech, photography creators with authentic and warm tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "tech",
-      "photography"
-    ],
-    "target_geo": [
       "UK",
-      "US"
-    ],
-    "target_age": "45+",
-    "budget_tier": "mid",
-    "tone": "authentic and warm"
-  },
-  {
-    "brand_id": "b30",
-    "brand_name": "SkincareCo 30",
-    "category": "skincare",
-    "brief_text": "Launch campaign for skincare targeting 13-17 in US. Looking for skincare, beauty creators with minimal and premium tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "skincare",
-      "beauty"
-    ],
-    "target_geo": [
-      "US"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "mid",
-    "tone": "minimal and premium"
-  },
-  {
-    "brand_id": "b31",
-    "brand_name": "FashionCo 31",
-    "category": "fashion",
-    "brief_text": "Launch campaign for fashion targeting 18-24 in global. Looking for fashion, beauty creators with educational and clear tone. Goal: authentic reviews that convert.",
-    "target_niche": [
-      "fashion",
-      "beauty"
-    ],
-    "target_geo": [
-      "global"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "macro",
-    "tone": "educational and clear"
-  },
-  {
-    "brand_id": "b32",
-    "brand_name": "Food_BeverageCo 32",
-    "category": "food & beverage",
-    "brief_text": "Launch campaign for food & beverage targeting 25-34 in DE/US. Looking for food creators with luxurious and aspirational tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "food"
-    ],
-    "target_geo": [
-      "DE",
-      "US"
-    ],
-    "target_age": "25-34",
-    "budget_tier": "micro",
-    "tone": "luxurious and aspirational"
-  },
-  {
-    "brand_id": "b33",
-    "brand_name": "TravelCo 33",
-    "category": "travel",
-    "brief_text": "Launch campaign for travel targeting 35-44 in UK/global. Looking for travel, photography creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "travel",
-      "photography"
-    ],
-    "target_geo": [
-      "UK",
-      "global"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "mid",
-    "tone": "fun gen-z humor"
-  },
-  {
-    "brand_id": "b34",
-    "brand_name": "FintechCo 34",
-    "category": "fintech",
-    "brief_text": "Launch campaign for fintech targeting 45+ in UK. Looking for finance, tech creators with trustworthy expert tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "finance",
-      "tech"
-    ],
-    "target_geo": [
-      "UK"
-    ],
-    "target_age": "45+",
-    "budget_tier": "macro",
-    "tone": "trustworthy expert"
-  },
-  {
-    "brand_id": "b35",
-    "brand_name": "FitnessCo 35",
-    "category": "fitness",
-    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with playful and bold tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "fitness",
-      "sports"
-    ],
-    "target_geo": [
-      "DE"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "macro",
-    "tone": "playful and bold"
-  },
-  {
-    "brand_id": "b36",
-    "brand_name": "GamingCo 36",
-    "category": "gaming",
-    "brief_text": "Launch campaign for gaming targeting 18-24 in UK. Looking for gaming, tech creators with authentic and warm tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "gaming",
-      "tech"
-    ],
-    "target_geo": [
-      "UK"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "mid",
-    "tone": "authentic and warm"
-  },
-  {
-    "brand_id": "b37",
-    "brand_name": "Home_LivingCo 37",
-    "category": "home & living",
-    "brief_text": "Launch campaign for home & living targeting 25-34 in DE/global. Looking for home-decor, sustainability creators with minimal and premium tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "home-decor",
-      "sustainability"
-    ],
-    "target_geo": [
-      "DE",
-      "global"
+      "AU"
     ],
     "target_age": "25-34",
     "budget_tier": "mid",
-    "tone": "minimal and premium"
-  },
-  {
-    "brand_id": "b38",
-    "brand_name": "BeautyCo 38",
-    "category": "beauty",
-    "brief_text": "Launch campaign for beauty targeting 35-44 in US/global. Looking for beauty, skincare creators with educational and clear tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "beauty",
-      "skincare"
-    ],
-    "target_geo": [
-      "US",
-      "global"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "mid",
-    "tone": "educational and clear"
-  },
-  {
-    "brand_id": "b39",
-    "brand_name": "Consumer TechCo 39",
-    "category": "consumer tech",
-    "brief_text": "Launch campaign for consumer tech targeting 45+ in DE/UK. Looking for tech, photography creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "tech",
-      "photography"
-    ],
-    "target_geo": [
-      "DE",
-      "UK"
-    ],
-    "target_age": "45+",
-    "budget_tier": "micro",
-    "tone": "luxurious and aspirational"
-  },
-  {
-    "brand_id": "b40",
-    "brand_name": "SkincareCo 40",
-    "category": "skincare",
-    "brief_text": "Launch campaign for skincare targeting 13-17 in DE/global. Looking for skincare, beauty creators with fun gen-z humor tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "skincare",
-      "beauty"
-    ],
-    "target_geo": [
-      "DE",
-      "global"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "micro",
-    "tone": "fun gen-z humor"
-  },
-  {
-    "brand_id": "b41",
-    "brand_name": "FashionCo 41",
-    "category": "fashion",
-    "brief_text": "Launch campaign for fashion targeting 18-24 in US. Looking for fashion, beauty creators with trustworthy expert tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "fashion",
-      "beauty"
-    ],
-    "target_geo": [
-      "US"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "micro",
-    "tone": "trustworthy expert"
-  },
-  {
-    "brand_id": "b42",
-    "brand_name": "Food_BeverageCo 42",
-    "category": "food & beverage",
-    "brief_text": "Launch campaign for food & beverage targeting 25-34 in US. Looking for food creators with playful and bold tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "food"
-    ],
-    "target_geo": [
-      "US"
-    ],
-    "target_age": "25-34",
-    "budget_tier": "macro",
-    "tone": "playful and bold"
-  },
-  {
-    "brand_id": "b43",
-    "brand_name": "TravelCo 43",
-    "category": "travel",
-    "brief_text": "Launch campaign for travel targeting 35-44 in DE/US. Looking for travel, photography creators with authentic and warm tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "travel",
-      "photography"
-    ],
-    "target_geo": [
-      "DE",
-      "US"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "micro",
-    "tone": "authentic and warm"
-  },
-  {
-    "brand_id": "b44",
-    "brand_name": "FintechCo 44",
-    "category": "fintech",
-    "brief_text": "Launch campaign for fintech targeting 45+ in global. Looking for finance, tech creators with minimal and premium tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "finance",
-      "tech"
-    ],
-    "target_geo": [
-      "global"
-    ],
-    "target_age": "45+",
-    "budget_tier": "micro",
-    "tone": "minimal and premium"
-  },
-  {
-    "brand_id": "b45",
-    "brand_name": "FitnessCo 45",
-    "category": "fitness",
-    "brief_text": "Launch campaign for fitness targeting 13-17 in DE. Looking for fitness, sports creators with educational and clear tone. Goal: authentic reviews that convert.",
-    "target_niche": [
-      "fitness",
-      "sports"
-    ],
-    "target_geo": [
-      "DE"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "micro",
-    "tone": "educational and clear"
-  },
-  {
-    "brand_id": "b46",
-    "brand_name": "GamingCo 46",
-    "category": "gaming",
-    "brief_text": "Launch campaign for gaming targeting 18-24 in global. Looking for gaming, tech creators with luxurious and aspirational tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "gaming",
-      "tech"
-    ],
-    "target_geo": [
-      "global"
-    ],
-    "target_age": "18-24",
-    "budget_tier": "macro",
-    "tone": "luxurious and aspirational"
-  },
-  {
-    "brand_id": "b47",
-    "brand_name": "Home_LivingCo 47",
-    "category": "home & living",
-    "brief_text": "Launch campaign for home & living targeting 25-34 in UK. Looking for home-decor, sustainability creators with fun gen-z humor tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "home-decor",
-      "sustainability"
-    ],
-    "target_geo": [
-      "UK"
-    ],
-    "target_age": "25-34",
-    "budget_tier": "micro",
-    "tone": "fun gen-z humor"
-  },
-  {
-    "brand_id": "b48",
-    "brand_name": "BeautyCo 48",
-    "category": "beauty",
-    "brief_text": "Launch campaign for beauty targeting 35-44 in US/global. Looking for beauty, skincare creators with trustworthy expert tone. Goal: authentic tutorials that convert.",
-    "target_niche": [
-      "beauty",
-      "skincare"
-    ],
-    "target_geo": [
-      "US",
-      "global"
-    ],
-    "target_age": "35-44",
-    "budget_tier": "micro",
-    "tone": "trustworthy expert"
-  },
-  {
-    "brand_id": "b49",
-    "brand_name": "Consumer TechCo 49",
-    "category": "consumer tech",
-    "brief_text": "Launch campaign for consumer tech targeting 45+ in UK/global. Looking for tech, photography creators with playful and bold tone. Goal: authentic day-in-life that convert.",
-    "target_niche": [
-      "tech",
-      "photography"
-    ],
-    "target_geo": [
-      "UK",
-      "global"
-    ],
-    "target_age": "45+",
-    "budget_tier": "micro",
-    "tone": "playful and bold"
-  },
-  {
-    "brand_id": "b50",
-    "brand_name": "SkincareCo 50",
-    "category": "skincare",
-    "brief_text": "Launch campaign for skincare targeting 13-17 in UK. Looking for skincare, beauty creators with authentic and warm tone. Goal: authentic unboxings that convert.",
-    "target_niche": [
-      "skincare",
-      "beauty"
-    ],
-    "target_geo": [
-      "UK"
-    ],
-    "target_age": "13-17",
-    "budget_tier": "macro",
-    "tone": "authentic and warm"
+    "tone": "cinematic and curious"
   }
 ]
