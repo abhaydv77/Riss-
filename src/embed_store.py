@@ -15,10 +15,15 @@ COLLECTION_NAME = "creators"
 
 def build_text(creator):
     niche = " ".join(creator.get("niche", []))
-    audience = f"{creator.get('audience_age', '')} {' '.join(creator.get('audience_geo', []))}".strip()
+    audience_age = creator.get("audience_age", "")
+    audience_geo = creator.get("audience_geo", [])
+    audience_geo_str = ", ".join(audience_geo)
+    audience = f"{audience_age} {audience_geo_str}".strip()
     past_brands = " ".join(creator.get("past_brand_categories", []))
     deliverable_types = " ".join(creator.get("deliverable_types", []))
-    return f"{niche} {audience} {past_brands} {deliverable_types}".strip()
+    text = f"{niche} {audience} {past_brands} {deliverable_types}".strip()
+    text += f" audience in {audience_geo_str}"
+    return text.strip()
 
 
 def main():
@@ -41,7 +46,7 @@ def main():
         embeddings = model.encode(texts)
 
         ids = [c["creator_id"] for c in batch]
-        metadatas = [{k: v for k, v in c.items()} for c in batch]
+        metadatas = [{**{k: v for k, v in c.items()}, "audience_geo_str": ", ".join(c.get("audience_geo", []))} for c in batch]
         documents = texts
 
         collection.add(

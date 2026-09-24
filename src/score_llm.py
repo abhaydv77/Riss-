@@ -25,11 +25,15 @@ def retrieve(brief_dict, k=5):
         niche = " ".join(brief_dict.get("target_niche", []))
         geo = " ".join(brief_dict.get("target_geo", []))
         query_text = f"{niche} {brief_dict.get('target_age', '')} {geo} {brief_dict.get('tone', '')}".strip()
-    results = collection.query(query_texts=[query_text], n_results=k)
+    target_geo = set(brief_dict.get("target_geo", []))
+    results = collection.query(query_texts=[query_text], n_results=20)
     creators = []
     for i in range(len(results["ids"][0])):
-        creators.append({"creator": results["metadatas"][0][i], "score": results["distances"][0][i]})
-    return creators
+        creator_meta = results["metadatas"][0][i]
+        creator_geo = set(creator_meta.get("audience_geo", []))
+        if creator_geo & target_geo:
+            creators.append({"creator": creator_meta, "score": results["distances"][0][i]})
+    return creators[:k]
 
 
 # Same question schema as score_laya.py's build_questions(), so the two are
