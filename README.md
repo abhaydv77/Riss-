@@ -1,77 +1,96 @@
-# Riss — Creator/Brand Matching Pipeline
+# Guapd Smart Feed
 
-Vector retrieval + explainable scoring for matching brand briefs to creators.
+**Research prototype** for a creator-brand matching system.
 
-## Structure
+## Current Phase
+
+This is the **foundation phase**. Only data, vector retrieval, and ChromaDB are in place.
+
+Future phases will add:
+- Laya decision gate (KEEP / UNCERTAIN / DROP)
+- LLM fallback for uncertain cases
+- Final ranked creator feed
+- Evaluation and fine-tuning
+
+## Architecture
 
 ```
+Brand Brief
+    ↓
+Text conversion
+    ↓
+Sentence-transformer embedding
+    ↓
+ChromaDB similarity search
+    ↓
+Top-K candidate creators
+```
+
+The retrieval layer is isolated from the future Laya and LLM layers.
+
+## Folder Structure
+
+```
+guapd-smart-feed/
+│
 ├── data/
-│   ├── raw/              # creators_batch1..10.json, brands_batch1..5.json
-│   ├── creators.json     # merged, 500
-│   ├── brands.json       # merged, 50
-│   └── labels.json       # manual labels, eval subset (10 brands x 10)
-├── src/
-│   ├── generate_merge.py # merges raw batches into final json
-│   ├── embed_store.py    # embeds + stores in vector db (Chroma)
-│   ├── retrieve.py       # vector search: brief -> top-k creators
-│   ├── score_laya.py     # laya scoring on retrieved pairs
-│   ├── score_llm.py      # llm baseline scoring (same pairs)
-│   └── rank.py           # combines + outputs ranked results
-├── eval/
-│   ├── run_eval.py       # deepeval-based eval script
-│   └── results/
-│       └── comparison.csv# vector-only vs laya vs llm scores
-├── db/                   # chroma persistent storage
+│   ├── brands.json          # Brand campaign briefs
+│   └── creators.json        # Creator profiles
+│
+├── retrieval/
+│   ├── __init__.py
+│   ├── embeddings.py        # Text conversion for creators and brands
+│   ├── chroma_store.py      # Persistent ChromaDB storage
+│   └── retrieve.py          # Vector search: brief -> top-K creators
+│
+├── scripts/
+│   ├── generate_data.py     # Generate synthetic data
+│   └── build_index.py       # Build the ChromaDB index
+│
+├── tests/
+│   └── test_retrieval.py    # Retrieval layer tests
+│
 ├── requirements.txt
-└── README.md
+├── README.md
+└── .gitignore
 ```
+
+## What Retrieval Does
+
+1. Convert a brand brief into a searchable text string
+2. Embed it with `all-MiniLM-L6-v2`
+3. Query ChromaDB for the most similar creator embeddings
+4. Return top-K creators with metadata and similarity scores
 
 ## Setup
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+# Install dependencies
 pip install -r requirements.txt
-cp .env.example .env   # optional, for LLM scoring
+
+# Generate data
+python scripts/generate_data.py
+
+# Build the index
+python scripts/build_index.py
+
+# Run tests
+python -m unittest tests/test_retrieval.py
 ```
 
-Synthetic demo data (seed=42) is already in `data/raw/`; re-merge anytime with:
+## Data Contract
 
-```bash
-python -m src.generate_merge
-```
+### `creators.json`
+Each creator has: `creator_id`, `name`, `handle`, `platform`, `niche`, `bio`,
+`followers`, `avg_engagement_rate`, `audience_age`, `audience_geo`,
+`content_style`, `past_brand_categories`, `location`, `rate_range_inr`,
+`deliverable_types`.
 
-## Pipeline
+### `brands.json`
+Each brand has: `brand_id`, `brand_name`, `category`, `brief_text`,
+`target_niche`, `target_geo`, `target_age`, `budget_tier`, `tone`.
 
-```bash
-# 1. embed + store (Chroma persistent in ./db; TF-IDF fallback with --force-fallback)
-python -m src.embed_store
-# 2. retrieve
-python -m src.retrieve --brand-id b01 --top-k 10
-# 3a. laya score a pair
-python -m src.score_laya --brand-id b01 --creator-id c001
-# 3b. llm baseline score (uses OPENAI_API_KEY if set, else offline baseline)
-python -m src.score_llm --brand-id b01 --creator-id c001
-# 4. ranked results (methods: vector | laya | llm | hybrid)
-python -m src.rank --brand-id b01 --top-k 20 --method hybrid
-# 5. eval -> eval/results/comparison.csv
-python -m eval.run_eval --top-k 10
-```
+## Notes
 
-Without heavy deps installed, retrieval/ranking/eval run on a zero-dependency
-token-overlap scorer; install `requirements.txt` for Chroma + sentence-transformers
-(`all-MiniLM-L6-v2`) and deepeval metrics.
-
-## Scoring
-
-- **vector**: cosine similarity of brief vs creator text, min-max normalized 0–100.
-- **laya** (`src/score_laya.py`): explainable 0–100 =
-  niche_overlap 40 + audience_fit 20 + engagement 15 + style_tone 15 + brand_affinity 10.
-- **llm** (`src/score_llm.py`): OpenAI baseline (JSON `{total, rationale}`) or offline
-  keyword-jaccard baseline when no key is set.
-- **rank** final = `0.3*vector + 0.5*laya + 0.2*llm` (hybrid; see `--method`).
-
-## Eval
-
-`eval/run_eval.py` ranks top-k per brand for each method and reports
-HitRate@K, MRR, NDCG@K vs `data/labels.json`, plus an AVG row per method.
-Uses deepeval when installed, native IR metrics otherwise.
+This is a clean research prototype. No frontend, no agent framework, no LLM
+judge, no Laya gate. Just data + embeddings + vector retrieval.
