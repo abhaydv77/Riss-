@@ -5,6 +5,7 @@ import json
 import os
 import sys
 import tempfile
+import warnings
 from pathlib import Path
 from typing import Any
 
@@ -12,7 +13,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from laya.client import MODEL_ID
-from laya.decision import evaluate_creator
+from laya.client import get_agent, predict_batch
+from laya.decision import evaluate_creator, normalize_response, prediction_from_raw
 from laya.questions import QUESTIONS
 from laya.state_builder import build_state
 
@@ -30,6 +32,7 @@ DIMENSIONS = (
     "niche_fit", "audience_fit", "geography_fit", "platform_fit",
     "budget_fit", "creator_size_fit", "campaign_fit",
 )
+BATCH_SIZE = 8
 
 
 def read_json(path: Path) -> Any:
@@ -223,37 +226,78 @@ def calculate_metrics(rows: list[dict], brands: list[dict]) -> dict:
 
 
 def run_domain_evaluation(brands: list[dict], creators: list[dict], label_map: dict) -> list[dict]:
-    results = []
-    creator_by_id = {c["creator_id"]: c for c in creators}
+    results_by_pair: dict[tuple[str, str], dict] = {}
+    if PREDICTIONS_JSON.exists():
+        for previous in read_json(PREDICTIONS_JSON):
+            pair = (previous.get("brand_id"), previous.get("creator_id"))
+            if pair in label_map:
+                if previous.get("success"):
+                    raw = previous.get("laya", {}).get("raw_response")
+                    if raw:
+                        previous["laya"] = {**normalize_response(raw), "raw_response": raw}
+                results_by_pair[pair] = previous
     total = len(brands) * len(creators)
-    for brand_index, brand in enumerate(brands, 1):
-        for creator_index, creator in enumerate(creators, 1):
-            row = label_map[(brand["brand_id"], creator["creator_id"])]
-            entry = {
-                "brand_id": brand["brand_id"],
-                "creator_id": creator["creator_id"],
-                "ground_truth_label": row["label"],
-                "ground_truth": training_ground_truth(row),
-                "ground_truth_answers": training_ground_truth(row),
-                "success": False,
-            }
+    jobs = [
+        (brand, creator, label_map[(brand["brand_id"], creator["creator_id"])])
+        for brand in brands for creator in creators
+        if (brand["brand_id"], creator["creator_id"]) not in results_by_pair
+    ]
+    agent = get_agent()
+
+    def base_entry(brand: dict, creator: dict, label_row: dict) -> dict:
+        ground_truth = training_ground_truth(label_row)
+        return {
+            "brand_id": brand["brand_id"], "creator_id": creator["creator_id"],
+            "ground_truth_label": label_row["label"],
+            "ground_truth": ground_truth, "ground_truth_answers": ground_truth,
+            "success": False,
+        }
+
+    for start in range(0, len(jobs), BATCH_SIZE):
+        batch = jobs[start:start + BATCH_SIZE]
+        states = [build_state(brand, creator) for brand, creator, _ in batch]
+        try:
+            raw_results = predict_batch(states, QUESTIONS, batch_size=BATCH_SIZE, agent=agent)
+            if not isinstance(raw_results, list) or len(raw_results) != len(batch):
+                raise ValueError(f"SDK returned {len(raw_results) if isinstance(raw_results, list) else 'non-list'} results for {len(batch)} states")
+        except Exception as batch_exc:
+            # Isolate a batch-level failure so every pair still gets a recorded result.
+            print(f"Batch at pair {start + 1} failed ({batch_exc}); retrying its pairs individually.", flush=True)
+            raw_results = [None] * len(batch)
+
+        for index, ((brand, creator, label_row), state, raw) in enumerate(zip(batch, states, raw_results)):
+            pair = (brand["brand_id"], creator["creator_id"])
+            entry = base_entry(brand, creator, label_row)
             try:
-                prediction = evaluate_creator(brand, creator)
-                entry.update(prediction)
+                if raw is None:
+                    entry.update(evaluate_creator(brand, creator, agent=agent))
+                else:
+                    entry.update(prediction_from_raw(brand, creator, raw, state=state, questions=QUESTIONS))
                 entry["success"] = True
             except Exception as exc:
-                entry["state"] = build_state(brand, creator)
-                entry["questions"] = QUESTIONS
-                entry["model"] = MODEL_ID
-                entry["error"] = f"{type(exc).__name__}: {exc}"
-                raw_response = getattr(exc, "raw_response", None)
-                if raw_response is not None:
-                    entry["raw_response"] = raw_response
-                print(f"  FAILED {brand['brand_id']}/{creator['creator_id']}: {entry['error']}")
-            results.append(entry)
-        write_json_atomic(PREDICTIONS_JSON, results)
-        print(f"Completed {brand_index}/{len(brands)} brands ({brand_index * len(creators)}/{total} pairs)")
-    return results
+                # Retry malformed per-state batch outputs once through the SDK's single-state path.
+                if raw is not None:
+                    try:
+                        entry.update(evaluate_creator(brand, creator, agent=agent))
+                        entry["success"] = True
+                    except Exception as retry_exc:
+                        exc = retry_exc
+                if not entry["success"]:
+                    entry["state"] = state
+                    entry["questions"] = QUESTIONS
+                    entry["model"] = MODEL_ID
+                    entry["error"] = f"{type(exc).__name__}: {exc}"
+                    if raw is not None:
+                        entry["raw_response"] = raw
+                    print(f"  FAILED {brand['brand_id']}/{creator['creator_id']}: {entry['error']}", flush=True)
+            results_by_pair[pair] = entry
+
+        ordered = [results_by_pair[(b["brand_id"], c["creator_id"])]
+                   for b in brands for c in creators
+                   if (b["brand_id"], c["creator_id"]) in results_by_pair]
+        write_json_atomic(PREDICTIONS_JSON, ordered)
+        print(f"Evaluated {len(results_by_pair)}/{total} pairs", flush=True)
+    return [results_by_pair[(b["brand_id"], c["creator_id"])] for b in brands for c in creators]
 
 
 def validate_predictions(predictions: list[dict], brands: list[dict], creators: list[dict]) -> None:
@@ -393,6 +437,11 @@ def write_report_markdown(report: dict) -> None:
                   "", "| Confidence band | Predictions | Correct |", "|---|---:|---:|"])
     for band, row in m["confidence"]["distribution"].items():
         lines.append(f"| {band} | {row['count']} | {row['correct']} |")
+    if report.get("runtime_warnings"):
+        lines.append("")
+        lines.append("SDK runtime warnings:")
+        lines.extend(f"- {warning}" for warning in report["runtime_warnings"])
+        lines.append("The warning reported concerns the SDK's 11+ option temperature bucket; each experiment question has three choices. Raw per-question probabilities and both SDK confidence fields are retained for inspection.")
     lines.extend(["", "### Per-brand results", "", "| Brand | Accuracy | Good retention | Poor rejection | Maybe→UNCERTAIN | Successful/40 |", "|---|---:|---:|---:|---:|---:|"])
     for row in m["per_brand"]:
         lines.append(f"| {row['brand_name']} | {row['accuracy']:.3f} | {fmt(row['good_retention'])} | {fmt(row['poor_rejection'])} | {fmt(row['maybe_uncertainty'])} | {row['successful']}/40 |")
@@ -437,7 +486,10 @@ def fmt(value) -> str:
 def main() -> int:
     brands, creators, labels, label_map = load_and_validate_inputs()
     print(f"Loaded {len(brands)} brands, {len(creators)} creators, {len(labels)} complete ground-truth pairs.")
-    predictions = run_domain_evaluation(brands, creators, label_map)
+    with warnings.catch_warnings(record=True) as caught_warnings:
+        warnings.simplefilter("always")
+        predictions = run_domain_evaluation(brands, creators, label_map)
+    runtime_warnings = sorted({str(w.message) for w in caught_warnings})
     validate_predictions(predictions, brands, creators)
     successful = sum(bool(row.get("success")) for row in predictions)
     failed = len(predictions) - successful
@@ -454,8 +506,10 @@ def main() -> int:
         "experiment": "laya_baseline_v0",
         "model": MODEL_ID,
         "sdk_version": sdk_version,
+        "runtime_warnings": runtime_warnings,
         "dataset": {"brands": len(brands), "creators": len(creators), "pairs": len(labels)},
         "run": {"attempted": len(predictions), "successful": successful, "failed": failed},
+        "batch_size": BATCH_SIZE,
         "ground_truth_mapping": GROUND_TRUTH_TO_DECISION,
         "metrics": metrics,
         "feed": feed,

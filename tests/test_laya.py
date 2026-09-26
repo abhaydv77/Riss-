@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
 from laya.decision import LayaResponseError, evaluate_creator, normalize_response
+from laya.client import predict_batch
 from laya.questions import QUESTIONS
 from laya.state_builder import build_state
 
@@ -20,7 +21,8 @@ def mock_response():
         "campaign_fit": "strong", "final_decision": "KEEP",
     }
     return {"answers": {
-        key: {"choice": value, "confidence": .83, "probabilities": {value: .83, "other": .17}, "raw": True}
+        key: {"choice": value, "confidence": .50, "answer_confidence": .83,
+              "probabilities": {value: .83, "other": .17}, "raw": True}
         for key, value in choices.items()
     }, "usage": {"input_tokens": 20, "output_tokens": 0}}
 
@@ -32,6 +34,10 @@ class FakeAgent:
     def predict(self, state, questions):
         self.calls.append((state, questions))
         return mock_response()
+
+    def predict_batch(self, states, questions, batch_size):
+        self.calls.append((states, questions, batch_size))
+        return [mock_response() for _ in states]
 
 
 class TestLayaIntegration(unittest.TestCase):
@@ -63,8 +69,8 @@ class TestLayaIntegration(unittest.TestCase):
         self.assertEqual(state, build_state(self.brand, self.creator))
         self.assertNotIn("unused_key", state["brand"])
         self.assertNotIn("unused_key", state["creator"])
-        self.assertEqual(state["brand"]["follower_bounds"]["minimum"], 100)
-        self.assertEqual(state["creator"]["primary_niche"], "fitness")
+        self.assertIn("100-1000", state["brand"])
+        self.assertIn("niche fitness", state["creator"])
 
     def test_all_eight_questions_are_typed_choices(self):
         self.assertEqual(len(QUESTIONS), 8)
@@ -86,6 +92,14 @@ class TestLayaIntegration(unittest.TestCase):
         del malformed["answers"]["audience_fit"]["probabilities"]
         with self.assertRaises(LayaResponseError):
             normalize_response(malformed)
+
+    def test_sdk_batch_method_is_used_when_requested(self):
+        agent = FakeAgent()
+        states = [{"brand": "one"}, {"brand": "two"}]
+        results = predict_batch(states, QUESTIONS, batch_size=2, agent=agent)
+        self.assertEqual(len(results), 2)
+        self.assertEqual(len(agent.calls), 1)
+        self.assertEqual(agent.calls[0][2], 2)
 
 
 if __name__ == "__main__":

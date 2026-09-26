@@ -41,7 +41,9 @@ def normalize_response(raw: dict) -> dict[str, dict[str, Any]]:
         choice = answer.get("choice")
         if choice not in options:
             raise LayaResponseError(f"{question_id} returned invalid choice {choice!r}")
-        confidence = answer.get("confidence")
+        # Current SDKs expose answer_confidence as calibrated confidence in the
+        # selected class; `confidence` is normalized entropy for choice answers.
+        confidence = answer.get("answer_confidence", answer.get("confidence"))
         if not isinstance(confidence, (int, float)) or not 0 <= confidence <= 1:
             raise LayaResponseError(f"{question_id} returned invalid confidence {confidence!r}")
         probabilities = answer.get("probabilities")
@@ -50,6 +52,7 @@ def normalize_response(raw: dict) -> dict[str, dict[str, Any]]:
         normalized[question_id] = {
             "choice": choice,
             "confidence": float(confidence),
+            "sdk_confidence": answer.get("confidence"),
             "probabilities": probabilities,
             "raw_answer": answer,
         }
@@ -63,7 +66,7 @@ def evaluate_creator(brand: dict, creator: dict, agent=None) -> dict:
     raw = None
     try:
         raw = predict(state, questions, agent=agent)
-        normalized = normalize_response(raw)
+        return prediction_from_raw(brand, creator, raw, state=state, questions=questions)
     except LayaClientError:
         raise
     except LayaResponseError as exc:
@@ -71,14 +74,20 @@ def evaluate_creator(brand: dict, creator: dict, agent=None) -> dict:
         raise
     except Exception as exc:
         raise LayaResponseError(str(exc)) from exc
+    raise AssertionError("unreachable")
+
+
+def prediction_from_raw(brand: dict, creator: dict, raw: dict, state: dict | None = None, questions: dict | None = None) -> dict:
+    """Normalize one per-state result returned by predict or predict_batch."""
+    normalized = normalize_response(raw)
     return {
         "brand_id": brand["brand_id"],
         "creator_id": creator["creator_id"],
-        "state": state,
-        "questions": questions,
+        "state": state if state is not None else build_state(brand, creator),
+        "questions": questions if questions is not None else deepcopy(QUESTIONS),
         "laya": {**normalized, "raw_response": raw},
         "model": MODEL_ID,
     }
 
 
-__all__ = ["evaluate_creator", "normalize_response", "LayaResponseError"]
+__all__ = ["evaluate_creator", "prediction_from_raw", "normalize_response", "LayaResponseError"]

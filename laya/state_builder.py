@@ -1,20 +1,19 @@
-"""Build compact, deterministic state for a brand/creator decision."""
+"""Build concise, deterministic text sections for a brand/creator decision."""
 from __future__ import annotations
 
+import json
 
-def _clip(text, limit: int) -> str | None:
-    if text is None:
-        return None
-    text = str(text).strip()
+
+def _clip(text, limit: int) -> str:
+    text = str(text or "").strip()
     if len(text) <= limit:
         return text
-    clipped = text[:limit].rsplit(" ", 1)[0]
-    return clipped + "…"
+    return text[:limit].rsplit(" ", 1)[0] + "…"
 
 
 def _compact_requirement(text: str) -> str:
-    """Remove repeated boilerplate without changing the stated requirement."""
-    replacements = (
+    """Remove repeated boilerplate while preserving each stated requirement."""
+    for old, new in (
         ("must be based in ", "base: "),
         ("must post in ", "language: "),
         ("must have ", ""),
@@ -22,65 +21,56 @@ def _compact_requirement(text: str) -> str:
         ("must cover ", "cover: "),
         ("must be ", ""),
         ("must ", ""),
-    )
-    result = text
-    for old, new in replacements:
-        result = result.replace(old, new)
-    return result
+    ):
+        text = text.replace(old, new)
+    return text
 
 
-def build_state(brand: dict, creator: dict) -> dict:
-    """Return matching context in fixed field order and a small token budget.
+def build_state(brand: dict, creator: dict) -> dict[str, str]:
+    """Return two readable structured sections sized for Laya's 512-token limit.
 
-    The base checkpoint has a 512-token sequence limit, including the question
-    and its options. Narrative fields are clipped and redundant metrics are
-    omitted so requirements and creator pricing/audience data are not silently
-    pushed out of the model input.
+    Long prose fields are clipped at word boundaries. The remaining fields are
+    all directly useful to the eight decisions. Keeping each section as concise
+    labeled text avoids JSON key overhead and prevents later fields (notably
+    rates and audience data) from being silently truncated by the checkpoint.
     """
-    brand_state = {
-        "name": brand.get("brand_name"),
-        "industry": brand.get("industry"),
-        "product": brand.get("product"),
-        "campaign_goal": _clip(brand.get("campaign_goal"), 100),
-        "campaign_description": _clip(brand.get("campaign_description"), 70),
-        "target_audience": _clip(brand.get("target_audience"), 55),
-        "age": brand.get("target_age_range"),
-        "gender": brand.get("target_gender"),
-        "markets": brand.get("target_locations", []),
-        "required_niches": brand.get("required_creator_niches", []),
-        "preferred_niches": brand.get("preferred_creator_niches", []),
-        "follower_bounds": [
-            brand.get("minimum_followers"),
-            brand.get("maximum_followers"),
-            brand.get("creator_size_preference"),
-        ],
-        "budget": [brand.get("budget"), brand.get("currency")],
-        "content": brand.get("content_types", []),
-        "platforms": brand.get("platforms", []),
-        "tone": brand.get("tone"),
-        "mandatory": [_compact_requirement(x) for x in brand.get("mandatory_requirements", [])],
-        "preferred_traits": brand.get("preferred_traits", [])[:3],
-        "excluded_traits": brand.get("excluded_traits", []),
-    }
-    creator_state = {
-        "name": creator.get("name"),
-        "niche": creator.get("primary_niche"),
-        "secondary_niches": creator.get("secondary_niches", []),
-        "bio": _clip(creator.get("bio"), 70),
-        "base": creator.get("location"),
-        "languages": creator.get("languages", []),
-        "platforms": creator.get("platforms", []),
-        "followers": creator.get("followers"),
-        "audience_age": creator.get("audience_age_range"),
-        "audience_gender": creator.get("audience_gender_distribution", {}),
-        "audience_markets": creator.get("audience_locations", []),
-        "content": creator.get("content_types", []),
-        "style": creator.get("content_style"),
-        "rate_card": creator.get("rate_card"),
-        "past_brands": creator.get("past_brand_categories", []),
-        "interests": creator.get("interests", []),
-    }
-    return {"brand": brand_state, "creator": creator_state}
+    budget = f"{brand.get('budget')} {brand.get('currency')}"
+    followers = (
+        f"{brand.get('minimum_followers')}-{brand.get('maximum_followers')} "
+        f"({brand.get('creator_size_preference')})"
+    )
+    must = "; ".join(_compact_requirement(x) for x in brand.get("mandatory_requirements", []))
+    traits = ", ".join(brand.get("preferred_traits", []))
+    excluded = ", ".join(brand.get("excluded_traits", []))
+    brand_context = (
+        f"Brand {brand.get('brand_name')}; industry {brand.get('industry')}; "
+        f"product {brand.get('product')}; goal {_clip(brand.get('campaign_goal'), 100)}; "
+        f"brief {_clip(brand.get('campaign_description'), 50)}; "
+        f"target {_clip(brand.get('target_audience'), 55)}; age {brand.get('target_age_range')}; "
+        f"gender {brand.get('target_gender')}; target markets {', '.join(brand.get('target_locations', []))}; "
+        f"required niches {', '.join(brand.get('required_creator_niches', []))}; "
+        f"preferred niches {', '.join(brand.get('preferred_creator_niches', []))}; "
+        f"follower bounds {followers}; budget {budget}; "
+        f"content {', '.join(brand.get('content_types', []))}; "
+        f"platforms {', '.join(brand.get('platforms', []))}; tone {brand.get('tone')}; "
+        f"mandatory requirements {must}; preferred traits {traits}; excluded traits {excluded}."
+    )
+    gender = json.dumps(creator.get("audience_gender_distribution", {}), sort_keys=True, separators=(",", ":"))
+    creator_context = (
+        f"Creator {creator.get('name')}; niche {creator.get('primary_niche')}, "
+        f"{', '.join(creator.get('secondary_niches', []))}; bio {_clip(creator.get('bio'), 80)}; "
+        f"based {creator.get('location')}; languages {', '.join(creator.get('languages', []))}; "
+        f"platforms {', '.join(creator.get('platforms', []))}; followers {creator.get('followers')}; "
+        f"engagement {creator.get('engagement_rate')}; average views {creator.get('average_views')}; "
+        f"audience age {creator.get('audience_age_range')}, gender {gender}, "
+        f"locations {', '.join(creator.get('audience_locations', []))}; "
+        f"content {', '.join(creator.get('content_types', []))}; style {creator.get('content_style')}; "
+        f"rate card {creator.get('rate_card')}; "
+        f"past brands {', '.join(creator.get('past_brand_categories', []))}; "
+        f"interests {', '.join(creator.get('interests', []))}; "
+        f"posting frequency {creator.get('posting_frequency')}."
+    )
+    return {"brand": brand_context, "creator": creator_context}
 
 
 __all__ = ["build_state"]

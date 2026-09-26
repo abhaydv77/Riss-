@@ -69,4 +69,20 @@ def predict(state: dict, questions: dict, agent=None) -> dict:
         raise LayaClientError(f"Laya prediction failed: {exc}") from exc
 
 
-__all__ = ["MODEL_ID", "LayaClientError", "get_agent", "predict"]
+def predict_batch(states: list[dict], questions: dict, batch_size: int, agent=None) -> list[dict]:
+    """Use the SDK's supported shared-question batch path for domain evaluation."""
+    try:
+        target = agent if agent is not None else get_agent()
+        batch_predict = getattr(target, "predict_batch", None)
+        if not callable(batch_predict):
+            raise LayaClientError(
+                "The installed Laya SDK does not expose predict_batch; upgrade to the pinned SDK version."
+            )
+        return batch_predict(states, questions, batch_size=batch_size)
+    except LayaClientError:
+        raise
+    except Exception as exc:
+        raise LayaClientError(f"Laya batch prediction failed: {exc}") from exc
+
+
+__all__ = ["MODEL_ID", "LayaClientError", "get_agent", "predict", "predict_batch"]

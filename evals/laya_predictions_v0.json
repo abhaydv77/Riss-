@@ -1,0 +1,4946 @@
+[
+  {
+    "brand_id": "b01",
+    "creator_id": "c01",
+    "ground_truth_label": "good",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "KEEP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "KEEP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Priya Sharma; niche fitness, sports, wellness; bio Certified CrossFit athlete and nutrition coach based in Mumbai. I create…; based Mumbai, India; languages Hindi, English; platforms instagram, youtube; followers 185000; engagement 0.042; average views 320000; audience age 18-30, gender {\"female\":0.72,\"male\":0.28}, locations India, UAE, Singapore; content workout, nutrition, healthy lifestyle; style energetic and motivational; rate card ₹15,000–₹50,000; past brands fitness, sports, health apps; interests gym, running, yoga; posting frequency 4-5 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "strong",
+        "confidence": 0.4742,
+        "sdk_confidence": 0.0484,
+        "probabilities": {
+          "strong": 0.4742,
+          "partial": 0.3162,
+          "none": 0.2097
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4742,
+            "partial": 0.3162,
+            "none": 0.2097
+          },
+          "confidence": 0.0484,
+          "answer_confidence": 0.4742,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "strong",
+        "confidence": 0.4336,
+        "sdk_confidence": 0.0241,
+        "probabilities": {
+          "strong": 0.4336,
+          "partial": 0.32,
+          "none": 0.2464
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4336,
+            "partial": 0.32,
+            "none": 0.2464
+          },
+          "confidence": 0.0241,
+          "answer_confidence": 0.4336,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.3986,
+        "sdk_confidence": 0.0094,
+        "probabilities": {
+          "strong": 0.3181,
+          "partial": 0.2833,
+          "none": 0.3986
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.3181,
+            "partial": 0.2833,
+            "none": 0.3986
+          },
+          "confidence": 0.0094,
+          "answer_confidence": 0.3986,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.4195,
+        "sdk_confidence": 0.0185,
+        "probabilities": {
+          "strong": 0.2554,
+          "partial": 0.3251,
+          "none": 0.4195
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2554,
+            "partial": 0.3251,
+            "none": 0.4195
+          },
+          "confidence": 0.0185,
+          "answer_confidence": 0.4195,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.3887,
+        "sdk_confidence": 0.0103,
+        "probabilities": {
+          "strong": 0.3428,
+          "partial": 0.2685,
+          "none": 0.3887
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.3428,
+            "partial": 0.2685,
+            "none": 0.3887
+          },
+          "confidence": 0.0103,
+          "answer_confidence": 0.3887,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "strong",
+        "confidence": 0.4702,
+        "sdk_confidence": 0.0415,
+        "probabilities": {
+          "strong": 0.4702,
+          "partial": 0.3034,
+          "none": 0.2265
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4702,
+            "partial": 0.3034,
+            "none": 0.2265
+          },
+          "confidence": 0.0415,
+          "answer_confidence": 0.4702,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "strong",
+        "confidence": 0.4155,
+        "sdk_confidence": 0.0192,
+        "probabilities": {
+          "strong": 0.4155,
+          "partial": 0.3355,
+          "none": 0.249
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4155,
+            "partial": 0.3355,
+            "none": 0.249
+          },
+          "confidence": 0.0192,
+          "answer_confidence": 0.4155,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5897,
+        "sdk_confidence": 0.1275,
+        "probabilities": {
+          "KEEP": 0.5897,
+          "UNCERTAIN": 0.2291,
+          "DROP": 0.1812
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5897,
+            "UNCERTAIN": 0.2291,
+            "DROP": 0.1812
+          },
+          "confidence": 0.1275,
+          "answer_confidence": 0.5897,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4742,
+              "partial": 0.3162,
+              "none": 0.2097
+            },
+            "confidence": 0.0484,
+            "answer_confidence": 0.4742,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4336,
+              "partial": 0.32,
+              "none": 0.2464
+            },
+            "confidence": 0.0241,
+            "answer_confidence": 0.4336,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.3181,
+              "partial": 0.2833,
+              "none": 0.3986
+            },
+            "confidence": 0.0094,
+            "answer_confidence": 0.3986,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2554,
+              "partial": 0.3251,
+              "none": 0.4195
+            },
+            "confidence": 0.0185,
+            "answer_confidence": 0.4195,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.3428,
+              "partial": 0.2685,
+              "none": 0.3887
+            },
+            "confidence": 0.0103,
+            "answer_confidence": 0.3887,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4702,
+              "partial": 0.3034,
+              "none": 0.2265
+            },
+            "confidence": 0.0415,
+            "answer_confidence": 0.4702,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4155,
+              "partial": 0.3355,
+              "none": 0.249
+            },
+            "confidence": 0.0192,
+            "answer_confidence": 0.4155,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5897,
+              "UNCERTAIN": 0.2291,
+              "DROP": 0.1812
+            },
+            "confidence": 0.1275,
+            "answer_confidence": 0.5897,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3282,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c02",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Alex Rivera; niche fitness, lifestyle, travel; bio Los Angeles based fitness model sharing gym tips, supplement reviews, and…; based Los Angeles, USA; languages English; platforms instagram, tiktok; followers 420000; engagement 0.038; average views 890000; audience age 25-34, gender {\"female\":0.55,\"male\":0.45}, locations US, Canada, UK; content workout, gym, fitness; style confident and aspirational; rate card ₹50,000–₹150,000; past brands sportswear, supplements, fitness apps; interests gym, running; posting frequency 6 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "strong",
+        "confidence": 0.5413,
+        "sdk_confidence": 0.0957,
+        "probabilities": {
+          "strong": 0.5413,
+          "partial": 0.2862,
+          "none": 0.1725
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.5413,
+            "partial": 0.2862,
+            "none": 0.1725
+          },
+          "confidence": 0.0957,
+          "answer_confidence": 0.5413,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "strong",
+        "confidence": 0.4784,
+        "sdk_confidence": 0.0475,
+        "probabilities": {
+          "strong": 0.4784,
+          "partial": 0.3043,
+          "none": 0.2172
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4784,
+            "partial": 0.3043,
+            "none": 0.2172
+          },
+          "confidence": 0.0475,
+          "answer_confidence": 0.4784,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.4383,
+        "sdk_confidence": 0.0224,
+        "probabilities": {
+          "strong": 0.2653,
+          "partial": 0.2964,
+          "none": 0.4383
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2653,
+            "partial": 0.2964,
+            "none": 0.4383
+          },
+          "confidence": 0.0224,
+          "answer_confidence": 0.4383,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "partial",
+        "confidence": 0.3496,
+        "sdk_confidence": 0.0006,
+        "probabilities": {
+          "strong": 0.3206,
+          "partial": 0.3496,
+          "none": 0.3298
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "strong": 0.3206,
+            "partial": 0.3496,
+            "none": 0.3298
+          },
+          "confidence": 0.0006,
+          "answer_confidence": 0.3496,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "strong",
+        "confidence": 0.4284,
+        "sdk_confidence": 0.0309,
+        "probabilities": {
+          "strong": 0.4284,
+          "partial": 0.222,
+          "none": 0.3496
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4284,
+            "partial": 0.222,
+            "none": 0.3496
+          },
+          "confidence": 0.0309,
+          "answer_confidence": 0.4284,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "strong",
+        "confidence": 0.4742,
+        "sdk_confidence": 0.0481,
+        "probabilities": {
+          "strong": 0.4742,
+          "partial": 0.3153,
+          "none": 0.2105
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4742,
+            "partial": 0.3153,
+            "none": 0.2105
+          },
+          "confidence": 0.0481,
+          "answer_confidence": 0.4742,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "strong",
+        "confidence": 0.5103,
+        "sdk_confidence": 0.0756,
+        "probabilities": {
+          "strong": 0.5103,
+          "partial": 0.3086,
+          "none": 0.1811
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.5103,
+            "partial": 0.3086,
+            "none": 0.1811
+          },
+          "confidence": 0.0756,
+          "answer_confidence": 0.5103,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5561,
+        "sdk_confidence": 0.0971,
+        "probabilities": {
+          "KEEP": 0.5561,
+          "UNCERTAIN": 0.2459,
+          "DROP": 0.198
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5561,
+            "UNCERTAIN": 0.2459,
+            "DROP": 0.198
+          },
+          "confidence": 0.0971,
+          "answer_confidence": 0.5561,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.5413,
+              "partial": 0.2862,
+              "none": 0.1725
+            },
+            "confidence": 0.0957,
+            "answer_confidence": 0.5413,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4784,
+              "partial": 0.3043,
+              "none": 0.2172
+            },
+            "confidence": 0.0475,
+            "answer_confidence": 0.4784,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2653,
+              "partial": 0.2964,
+              "none": 0.4383
+            },
+            "confidence": 0.0224,
+            "answer_confidence": 0.4383,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "partial",
+            "probabilities": {
+              "strong": 0.3206,
+              "partial": 0.3496,
+              "none": 0.3298
+            },
+            "confidence": 0.0006,
+            "answer_confidence": 0.3496,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4284,
+              "partial": 0.222,
+              "none": 0.3496
+            },
+            "confidence": 0.0309,
+            "answer_confidence": 0.4284,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4742,
+              "partial": 0.3153,
+              "none": 0.2105
+            },
+            "confidence": 0.0481,
+            "answer_confidence": 0.4742,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.5103,
+              "partial": 0.3086,
+              "none": 0.1811
+            },
+            "confidence": 0.0756,
+            "answer_confidence": 0.5103,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5561,
+              "UNCERTAIN": 0.2459,
+              "DROP": 0.198
+            },
+            "confidence": 0.0971,
+            "answer_confidence": 0.5561,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3242,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c03",
+    "ground_truth_label": "good",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "KEEP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "KEEP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Deepika Joshi; niche fitness, beauty, skincare; bio Yoga instructor and wellness advocate from Bangalore. I blend mindfulness with…; based Bangalore, India; languages English, Kannada; platforms instagram, youtube; followers 95000; engagement 0.051; average views 145000; audience age 25-34, gender {\"female\":0.85,\"male\":0.15}, locations India, Singapore; content yoga, skincare, wellness; style calm and authentic; rate card ₹5,000–₹15,000; past brands wellness, skincare, fitness; interests yoga, pilates; posting frequency 5 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "strong",
+        "confidence": 0.3707,
+        "sdk_confidence": 0.0118,
+        "probabilities": {
+          "strong": 0.3707,
+          "partial": 0.3702,
+          "none": 0.2591
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.3707,
+            "partial": 0.3702,
+            "none": 0.2591
+          },
+          "confidence": 0.0118,
+          "answer_confidence": 0.3707,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "partial",
+        "confidence": 0.3787,
+        "sdk_confidence": 0.0055,
+        "probabilities": {
+          "strong": 0.3326,
+          "partial": 0.3787,
+          "none": 0.2887
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "strong": 0.3326,
+            "partial": 0.3787,
+            "none": 0.2887
+          },
+          "confidence": 0.0055,
+          "answer_confidence": 0.3787,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.4531,
+        "sdk_confidence": 0.0284,
+        "probabilities": {
+          "strong": 0.2631,
+          "partial": 0.2838,
+          "none": 0.4531
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2631,
+            "partial": 0.2838,
+            "none": 0.4531
+          },
+          "confidence": 0.0284,
+          "answer_confidence": 0.4531,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.4329,
+        "sdk_confidence": 0.0299,
+        "probabilities": {
+          "strong": 0.2269,
+          "partial": 0.3402,
+          "none": 0.4329
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2269,
+            "partial": 0.3402,
+            "none": 0.4329
+          },
+          "confidence": 0.0299,
+          "answer_confidence": 0.4329,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.451,
+        "sdk_confidence": 0.0274,
+        "probabilities": {
+          "strong": 0.2848,
+          "partial": 0.2643,
+          "none": 0.451
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2848,
+            "partial": 0.2643,
+            "none": 0.451
+          },
+          "confidence": 0.0274,
+          "answer_confidence": 0.451,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "strong",
+        "confidence": 0.4444,
+        "sdk_confidence": 0.0271,
+        "probabilities": {
+          "strong": 0.4444,
+          "partial": 0.3078,
+          "none": 0.2477
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4444,
+            "partial": 0.3078,
+            "none": 0.2477
+          },
+          "confidence": 0.0271,
+          "answer_confidence": 0.4444,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "strong",
+        "confidence": 0.3929,
+        "sdk_confidence": 0.0161,
+        "probabilities": {
+          "strong": 0.3929,
+          "partial": 0.3582,
+          "none": 0.249
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.3929,
+            "partial": 0.3582,
+            "none": 0.249
+          },
+          "confidence": 0.0161,
+          "answer_confidence": 0.3929,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5973,
+        "sdk_confidence": 0.1325,
+        "probabilities": {
+          "KEEP": 0.5973,
+          "UNCERTAIN": 0.208,
+          "DROP": 0.1947
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5973,
+            "UNCERTAIN": 0.208,
+            "DROP": 0.1947
+          },
+          "confidence": 0.1325,
+          "answer_confidence": 0.5973,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.3707,
+              "partial": 0.3702,
+              "none": 0.2591
+            },
+            "confidence": 0.0118,
+            "answer_confidence": 0.3707,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "partial",
+            "probabilities": {
+              "strong": 0.3326,
+              "partial": 0.3787,
+              "none": 0.2887
+            },
+            "confidence": 0.0055,
+            "answer_confidence": 0.3787,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2631,
+              "partial": 0.2838,
+              "none": 0.4531
+            },
+            "confidence": 0.0284,
+            "answer_confidence": 0.4531,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2269,
+              "partial": 0.3402,
+              "none": 0.4329
+            },
+            "confidence": 0.0299,
+            "answer_confidence": 0.4329,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2848,
+              "partial": 0.2643,
+              "none": 0.451
+            },
+            "confidence": 0.0274,
+            "answer_confidence": 0.451,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4444,
+              "partial": 0.3078,
+              "none": 0.2477
+            },
+            "confidence": 0.0271,
+            "answer_confidence": 0.4444,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.3929,
+              "partial": 0.3582,
+              "none": 0.249
+            },
+            "confidence": 0.0161,
+            "answer_confidence": 0.3929,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5973,
+              "UNCERTAIN": 0.208,
+              "DROP": 0.1947
+            },
+            "confidence": 0.1325,
+            "answer_confidence": 0.5973,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3282,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c04",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Robert Müller; niche fitness, bodybuilding; bio German bodybuilder and powerlifting coach with 15 years of experience. I help…; based Berlin, Germany; languages German, English; platforms youtube, instagram; followers 310000; engagement 0.029; average views 480000; audience age 35-44, gender {\"female\":0.12,\"male\":0.88}, locations Germany, Austria, Switzerland; content bodybuilding, strength training; style serious and educational; rate card ₹15,000–₹50,000; past brands sports nutrition, gym equipment; interests bodybuilding, powerlifting; posting frequency 4 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "strong",
+        "confidence": 0.3974,
+        "sdk_confidence": 0.0112,
+        "probabilities": {
+          "strong": 0.3974,
+          "partial": 0.3326,
+          "none": 0.2699
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.3974,
+            "partial": 0.3326,
+            "none": 0.2699
+          },
+          "confidence": 0.0112,
+          "answer_confidence": 0.3974,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "partial",
+        "confidence": 0.3563,
+        "sdk_confidence": 0.0011,
+        "probabilities": {
+          "strong": 0.324,
+          "partial": 0.3563,
+          "none": 0.3196
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "strong": 0.324,
+            "partial": 0.3563,
+            "none": 0.3196
+          },
+          "confidence": 0.0011,
+          "answer_confidence": 0.3563,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.5395,
+        "sdk_confidence": 0.0819,
+        "probabilities": {
+          "strong": 0.218,
+          "partial": 0.2425,
+          "none": 0.5395
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.218,
+            "partial": 0.2425,
+            "none": 0.5395
+          },
+          "confidence": 0.0819,
+          "answer_confidence": 0.5395,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.4371,
+        "sdk_confidence": 0.0274,
+        "probabilities": {
+          "strong": 0.2373,
+          "partial": 0.3256,
+          "none": 0.4371
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2373,
+            "partial": 0.3256,
+            "none": 0.4371
+          },
+          "confidence": 0.0274,
+          "answer_confidence": 0.4371,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.3719,
+        "sdk_confidence": 0.008,
+        "probabilities": {
+          "strong": 0.3556,
+          "partial": 0.2726,
+          "none": 0.3719
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.3556,
+            "partial": 0.2726,
+            "none": 0.3719
+          },
+          "confidence": 0.008,
+          "answer_confidence": 0.3719,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "strong",
+        "confidence": 0.41,
+        "sdk_confidence": 0.0145,
+        "probabilities": {
+          "strong": 0.41,
+          "partial": 0.3257,
+          "none": 0.2644
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.41,
+            "partial": 0.3257,
+            "none": 0.2644
+          },
+          "confidence": 0.0145,
+          "answer_confidence": 0.41,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "strong",
+        "confidence": 0.4052,
+        "sdk_confidence": 0.0141,
+        "probabilities": {
+          "strong": 0.4052,
+          "partial": 0.3328,
+          "none": 0.2619
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4052,
+            "partial": 0.3328,
+            "none": 0.2619
+          },
+          "confidence": 0.0141,
+          "answer_confidence": 0.4052,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5576,
+        "sdk_confidence": 0.096,
+        "probabilities": {
+          "KEEP": 0.5576,
+          "UNCERTAIN": 0.2206,
+          "DROP": 0.2218
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5576,
+            "UNCERTAIN": 0.2206,
+            "DROP": 0.2218
+          },
+          "confidence": 0.096,
+          "answer_confidence": 0.5576,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.3974,
+              "partial": 0.3326,
+              "none": 0.2699
+            },
+            "confidence": 0.0112,
+            "answer_confidence": 0.3974,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "partial",
+            "probabilities": {
+              "strong": 0.324,
+              "partial": 0.3563,
+              "none": 0.3196
+            },
+            "confidence": 0.0011,
+            "answer_confidence": 0.3563,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.218,
+              "partial": 0.2425,
+              "none": 0.5395
+            },
+            "confidence": 0.0819,
+            "answer_confidence": 0.5395,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2373,
+              "partial": 0.3256,
+              "none": 0.4371
+            },
+            "confidence": 0.0274,
+            "answer_confidence": 0.4371,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.3556,
+              "partial": 0.2726,
+              "none": 0.3719
+            },
+            "confidence": 0.008,
+            "answer_confidence": 0.3719,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.41,
+              "partial": 0.3257,
+              "none": 0.2644
+            },
+            "confidence": 0.0145,
+            "answer_confidence": 0.41,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4052,
+              "partial": 0.3328,
+              "none": 0.2619
+            },
+            "confidence": 0.0141,
+            "answer_confidence": 0.4052,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5576,
+              "UNCERTAIN": 0.2206,
+              "DROP": 0.2218
+            },
+            "confidence": 0.096,
+            "answer_confidence": 0.5576,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3242,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c05",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "partial",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "partial",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Sofia Chen; niche beauty, skincare, lifestyle; bio Skincare enthusiast and licensed esthetician from Seoul. I review K-beauty…; based Seoul, South Korea; languages Korean, English; platforms instagram, youtube, tiktok; followers 280000; engagement 0.055; average views 520000; audience age 18-24, gender {\"female\":0.92,\"male\":0.08}, locations South Korea, Japan, Singapore; content skincare, beauty, k-beauty; style gorgeous and detail-oriented; rate card ₹15,000–₹50,000; past brands beauty brands, skincare, cosmetics; interests skincare, makeup; posting frequency daily posts."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "none",
+        "confidence": 0.4773,
+        "sdk_confidence": 0.045,
+        "probabilities": {
+          "strong": 0.2245,
+          "partial": 0.2982,
+          "none": 0.4773
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2245,
+            "partial": 0.2982,
+            "none": 0.4773
+          },
+          "confidence": 0.045,
+          "answer_confidence": 0.4773,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "none",
+        "confidence": 0.5831,
+        "sdk_confidence": 0.1296,
+        "probabilities": {
+          "strong": 0.1586,
+          "partial": 0.2583,
+          "none": 0.5831
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1586,
+            "partial": 0.2583,
+            "none": 0.5831
+          },
+          "confidence": 0.1296,
+          "answer_confidence": 0.5831,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.6653,
+        "sdk_confidence": 0.2098,
+        "probabilities": {
+          "strong": 0.1525,
+          "partial": 0.1823,
+          "none": 0.6653
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1525,
+            "partial": 0.1823,
+            "none": 0.6653
+          },
+          "confidence": 0.2098,
+          "answer_confidence": 0.6653,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.6729,
+        "sdk_confidence": 0.2318,
+        "probabilities": {
+          "strong": 0.1147,
+          "partial": 0.2124,
+          "none": 0.6729
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1147,
+            "partial": 0.2124,
+            "none": 0.6729
+          },
+          "confidence": 0.2318,
+          "answer_confidence": 0.6729,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.5576,
+        "sdk_confidence": 0.098,
+        "probabilities": {
+          "strong": 0.1993,
+          "partial": 0.2431,
+          "none": 0.5576
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1993,
+            "partial": 0.2431,
+            "none": 0.5576
+          },
+          "confidence": 0.098,
+          "answer_confidence": 0.5576,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "none",
+        "confidence": 0.4602,
+        "sdk_confidence": 0.0314,
+        "probabilities": {
+          "strong": 0.2721,
+          "partial": 0.2677,
+          "none": 0.4602
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2721,
+            "partial": 0.2677,
+            "none": 0.4602
+          },
+          "confidence": 0.0314,
+          "answer_confidence": 0.4602,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "none",
+        "confidence": 0.4747,
+        "sdk_confidence": 0.04,
+        "probabilities": {
+          "strong": 0.2443,
+          "partial": 0.281,
+          "none": 0.4747
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2443,
+            "partial": 0.281,
+            "none": 0.4747
+          },
+          "confidence": 0.04,
+          "answer_confidence": 0.4747,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5644,
+        "sdk_confidence": 0.1051,
+        "probabilities": {
+          "KEEP": 0.5644,
+          "UNCERTAIN": 0.246,
+          "DROP": 0.1897
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5644,
+            "UNCERTAIN": 0.246,
+            "DROP": 0.1897
+          },
+          "confidence": 0.1051,
+          "answer_confidence": 0.5644,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2245,
+              "partial": 0.2982,
+              "none": 0.4773
+            },
+            "confidence": 0.045,
+            "answer_confidence": 0.4773,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1586,
+              "partial": 0.2583,
+              "none": 0.5831
+            },
+            "confidence": 0.1296,
+            "answer_confidence": 0.5831,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1525,
+              "partial": 0.1823,
+              "none": 0.6653
+            },
+            "confidence": 0.2098,
+            "answer_confidence": 0.6653,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1147,
+              "partial": 0.2124,
+              "none": 0.6729
+            },
+            "confidence": 0.2318,
+            "answer_confidence": 0.6729,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1993,
+              "partial": 0.2431,
+              "none": 0.5576
+            },
+            "confidence": 0.098,
+            "answer_confidence": 0.5576,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2721,
+              "partial": 0.2677,
+              "none": 0.4602
+            },
+            "confidence": 0.0314,
+            "answer_confidence": 0.4602,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2443,
+              "partial": 0.281,
+              "none": 0.4747
+            },
+            "confidence": 0.04,
+            "answer_confidence": 0.4747,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5644,
+              "UNCERTAIN": 0.246,
+              "DROP": 0.1897
+            },
+            "confidence": 0.1051,
+            "answer_confidence": 0.5644,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3426,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c06",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "none",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "none",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Meera Patel; niche beauty, fashion, lifestyle; bio Mumbai-based beauty and fashion creator. I create makeup tutorials, outfit…; based Mumbai, India; languages Hindi, English; platforms instagram, youtube; followers 150000; engagement 0.048; average views 275000; audience age 18-30, gender {\"female\":0.78,\"male\":0.22}, locations India, UAE; content beauty, fashion, lifestyle; style vibrant and relatable; rate card ₹10,000–₹30,000; past brands beauty, fashion, jewelry; interests makeup, fashion; posting frequency 5-6 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "none",
+        "confidence": 0.409,
+        "sdk_confidence": 0.0165,
+        "probabilities": {
+          "strong": 0.2548,
+          "partial": 0.3362,
+          "none": 0.409
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2548,
+            "partial": 0.3362,
+            "none": 0.409
+          },
+          "confidence": 0.0165,
+          "answer_confidence": 0.409,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "none",
+        "confidence": 0.4234,
+        "sdk_confidence": 0.0264,
+        "probabilities": {
+          "strong": 0.231,
+          "partial": 0.3456,
+          "none": 0.4234
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.231,
+            "partial": 0.3456,
+            "none": 0.4234
+          },
+          "confidence": 0.0264,
+          "answer_confidence": 0.4234,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.5402,
+        "sdk_confidence": 0.0829,
+        "probabilities": {
+          "strong": 0.2145,
+          "partial": 0.2453,
+          "none": 0.5402
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2145,
+            "partial": 0.2453,
+            "none": 0.5402
+          },
+          "confidence": 0.0829,
+          "answer_confidence": 0.5402,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.5326,
+        "sdk_confidence": 0.0949,
+        "probabilities": {
+          "strong": 0.1646,
+          "partial": 0.3028,
+          "none": 0.5326
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1646,
+            "partial": 0.3028,
+            "none": 0.5326
+          },
+          "confidence": 0.0949,
+          "answer_confidence": 0.5326,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.5399,
+        "sdk_confidence": 0.0821,
+        "probabilities": {
+          "strong": 0.2197,
+          "partial": 0.2404,
+          "none": 0.5399
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2197,
+            "partial": 0.2404,
+            "none": 0.5399
+          },
+          "confidence": 0.0821,
+          "answer_confidence": 0.5399,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "none",
+        "confidence": 0.4509,
+        "sdk_confidence": 0.027,
+        "probabilities": {
+          "strong": 0.2762,
+          "partial": 0.2729,
+          "none": 0.4509
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2762,
+            "partial": 0.2729,
+            "none": 0.4509
+          },
+          "confidence": 0.027,
+          "answer_confidence": 0.4509,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "none",
+        "confidence": 0.4108,
+        "sdk_confidence": 0.0131,
+        "probabilities": {
+          "strong": 0.2748,
+          "partial": 0.3144,
+          "none": 0.4108
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2748,
+            "partial": 0.3144,
+            "none": 0.4108
+          },
+          "confidence": 0.0131,
+          "answer_confidence": 0.4108,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5556,
+        "sdk_confidence": 0.1024,
+        "probabilities": {
+          "KEEP": 0.5556,
+          "UNCERTAIN": 0.2665,
+          "DROP": 0.1779
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5556,
+            "UNCERTAIN": 0.2665,
+            "DROP": 0.1779
+          },
+          "confidence": 0.1024,
+          "answer_confidence": 0.5556,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2548,
+              "partial": 0.3362,
+              "none": 0.409
+            },
+            "confidence": 0.0165,
+            "answer_confidence": 0.409,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.231,
+              "partial": 0.3456,
+              "none": 0.4234
+            },
+            "confidence": 0.0264,
+            "answer_confidence": 0.4234,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2145,
+              "partial": 0.2453,
+              "none": 0.5402
+            },
+            "confidence": 0.0829,
+            "answer_confidence": 0.5402,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1646,
+              "partial": 0.3028,
+              "none": 0.5326
+            },
+            "confidence": 0.0949,
+            "answer_confidence": 0.5326,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2197,
+              "partial": 0.2404,
+              "none": 0.5399
+            },
+            "confidence": 0.0821,
+            "answer_confidence": 0.5399,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2762,
+              "partial": 0.2729,
+              "none": 0.4509
+            },
+            "confidence": 0.027,
+            "answer_confidence": 0.4509,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2748,
+              "partial": 0.3144,
+              "none": 0.4108
+            },
+            "confidence": 0.0131,
+            "answer_confidence": 0.4108,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5556,
+              "UNCERTAIN": 0.2665,
+              "DROP": 0.1779
+            },
+            "confidence": 0.1024,
+            "answer_confidence": 0.5556,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3242,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c07",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "partial",
+      "campaign_fit": "none",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "partial",
+      "campaign_fit": "none",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Chloe Dubois; niche beauty, luxury, fashion; bio Paris-based luxury beauty and fashion influencer. I partner with haute couture…; based Paris, France; languages French, English; platforms instagram, youtube; followers 520000; engagement 0.031; average views 950000; audience age 25-34, gender {\"female\":0.82,\"male\":0.18}, locations France, UK, Italy; content luxury beauty, fashion, travel; style luxe and aspirational; rate card ₹50,000–₹150,000; past brands luxury cosmetics, high-end skincare; interests luxury, beauty; posting frequency 3 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "none",
+        "confidence": 0.5616,
+        "sdk_confidence": 0.1015,
+        "probabilities": {
+          "strong": 0.1966,
+          "partial": 0.2418,
+          "none": 0.5616
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1966,
+            "partial": 0.2418,
+            "none": 0.5616
+          },
+          "confidence": 0.1015,
+          "answer_confidence": 0.5616,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "none",
+        "confidence": 0.5553,
+        "sdk_confidence": 0.0972,
+        "probabilities": {
+          "strong": 0.1948,
+          "partial": 0.2498,
+          "none": 0.5553
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1948,
+            "partial": 0.2498,
+            "none": 0.5553
+          },
+          "confidence": 0.0972,
+          "answer_confidence": 0.5553,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.5952,
+        "sdk_confidence": 0.1303,
+        "probabilities": {
+          "strong": 0.2017,
+          "partial": 0.2031,
+          "none": 0.5952
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2017,
+            "partial": 0.2031,
+            "none": 0.5952
+          },
+          "confidence": 0.1303,
+          "answer_confidence": 0.5952,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.6668,
+        "sdk_confidence": 0.2131,
+        "probabilities": {
+          "strong": 0.1445,
+          "partial": 0.1887,
+          "none": 0.6668
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1445,
+            "partial": 0.1887,
+            "none": 0.6668
+          },
+          "confidence": 0.2131,
+          "answer_confidence": 0.6668,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.5126,
+        "sdk_confidence": 0.0625,
+        "probabilities": {
+          "strong": 0.2566,
+          "partial": 0.2308,
+          "none": 0.5126
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2566,
+            "partial": 0.2308,
+            "none": 0.5126
+          },
+          "confidence": 0.0625,
+          "answer_confidence": 0.5126,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "none",
+        "confidence": 0.4413,
+        "sdk_confidence": 0.0264,
+        "probabilities": {
+          "strong": 0.3122,
+          "partial": 0.2465,
+          "none": 0.4413
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.3122,
+            "partial": 0.2465,
+            "none": 0.4413
+          },
+          "confidence": 0.0264,
+          "answer_confidence": 0.4413,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "none",
+        "confidence": 0.4169,
+        "sdk_confidence": 0.0144,
+        "probabilities": {
+          "strong": 0.3055,
+          "partial": 0.2775,
+          "none": 0.4169
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.3055,
+            "partial": 0.2775,
+            "none": 0.4169
+          },
+          "confidence": 0.0144,
+          "answer_confidence": 0.4169,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.6061,
+        "sdk_confidence": 0.1423,
+        "probabilities": {
+          "KEEP": 0.6061,
+          "UNCERTAIN": 0.2123,
+          "DROP": 0.1815
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.6061,
+            "UNCERTAIN": 0.2123,
+            "DROP": 0.1815
+          },
+          "confidence": 0.1423,
+          "answer_confidence": 0.6061,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1966,
+              "partial": 0.2418,
+              "none": 0.5616
+            },
+            "confidence": 0.1015,
+            "answer_confidence": 0.5616,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1948,
+              "partial": 0.2498,
+              "none": 0.5553
+            },
+            "confidence": 0.0972,
+            "answer_confidence": 0.5553,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2017,
+              "partial": 0.2031,
+              "none": 0.5952
+            },
+            "confidence": 0.1303,
+            "answer_confidence": 0.5952,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1445,
+              "partial": 0.1887,
+              "none": 0.6668
+            },
+            "confidence": 0.2131,
+            "answer_confidence": 0.6668,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2566,
+              "partial": 0.2308,
+              "none": 0.5126
+            },
+            "confidence": 0.0625,
+            "answer_confidence": 0.5126,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.3122,
+              "partial": 0.2465,
+              "none": 0.4413
+            },
+            "confidence": 0.0264,
+            "answer_confidence": 0.4413,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.3055,
+              "partial": 0.2775,
+              "none": 0.4169
+            },
+            "confidence": 0.0144,
+            "answer_confidence": 0.4169,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.6061,
+              "UNCERTAIN": 0.2123,
+              "DROP": 0.1815
+            },
+            "confidence": 0.1423,
+            "answer_confidence": 0.6061,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3306,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c08",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "partial",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "partial",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Kai Tanaka; niche gaming, tech, entertainment; bio Tokyo-based gaming streamer and tech reviewer. I cover AAA game releases,…; based Tokyo, Japan; languages Japanese, English; platforms youtube, tiktok; followers 680000; engagement 0.062; average views 1200000; audience age 18-24, gender {\"female\":0.25,\"male\":0.75}, locations Japan, US, UK; content gaming, tech, esports; style high-energy and funny; rate card ₹20,000–₹50,000; past brands gaming brands, tech gadgets, energy drinks; interests gaming, tech reviews; posting frequency daily streams."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "none",
+        "confidence": 0.7015,
+        "sdk_confidence": 0.2574,
+        "probabilities": {
+          "strong": 0.1391,
+          "partial": 0.1595,
+          "none": 0.7015
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1391,
+            "partial": 0.1595,
+            "none": 0.7015
+          },
+          "confidence": 0.2574,
+          "answer_confidence": 0.7015,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "none",
+        "confidence": 0.5563,
+        "sdk_confidence": 0.0967,
+        "probabilities": {
+          "strong": 0.2011,
+          "partial": 0.2426,
+          "none": 0.5563
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2011,
+            "partial": 0.2426,
+            "none": 0.5563
+          },
+          "confidence": 0.0967,
+          "answer_confidence": 0.5563,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.8575,
+        "sdk_confidence": 0.5388,
+        "probabilities": {
+          "strong": 0.0609,
+          "partial": 0.0816,
+          "none": 0.8575
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.0609,
+            "partial": 0.0816,
+            "none": 0.8575
+          },
+          "confidence": 0.5388,
+          "answer_confidence": 0.8575,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.8074,
+        "sdk_confidence": 0.4359,
+        "probabilities": {
+          "strong": 0.0773,
+          "partial": 0.1153,
+          "none": 0.8074
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.0773,
+            "partial": 0.1153,
+            "none": 0.8074
+          },
+          "confidence": 0.4359,
+          "answer_confidence": 0.8074,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.5208,
+        "sdk_confidence": 0.0701,
+        "probabilities": {
+          "strong": 0.2653,
+          "partial": 0.2139,
+          "none": 0.5208
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2653,
+            "partial": 0.2139,
+            "none": 0.5208
+          },
+          "confidence": 0.0701,
+          "answer_confidence": 0.5208,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "none",
+        "confidence": 0.7388,
+        "sdk_confidence": 0.3126,
+        "probabilities": {
+          "strong": 0.1261,
+          "partial": 0.1351,
+          "none": 0.7388
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1261,
+            "partial": 0.1351,
+            "none": 0.7388
+          },
+          "confidence": 0.3126,
+          "answer_confidence": 0.7388,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "none",
+        "confidence": 0.6298,
+        "sdk_confidence": 0.1665,
+        "probabilities": {
+          "strong": 0.1851,
+          "partial": 0.1852,
+          "none": 0.6298
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1851,
+            "partial": 0.1852,
+            "none": 0.6298
+          },
+          "confidence": 0.1665,
+          "answer_confidence": 0.6298,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5238,
+        "sdk_confidence": 0.0697,
+        "probabilities": {
+          "KEEP": 0.5238,
+          "UNCERTAIN": 0.237,
+          "DROP": 0.2391
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5238,
+            "UNCERTAIN": 0.237,
+            "DROP": 0.2391
+          },
+          "confidence": 0.0697,
+          "answer_confidence": 0.5238,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1391,
+              "partial": 0.1595,
+              "none": 0.7015
+            },
+            "confidence": 0.2574,
+            "answer_confidence": 0.7015,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2011,
+              "partial": 0.2426,
+              "none": 0.5563
+            },
+            "confidence": 0.0967,
+            "answer_confidence": 0.5563,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.0609,
+              "partial": 0.0816,
+              "none": 0.8575
+            },
+            "confidence": 0.5388,
+            "answer_confidence": 0.8575,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.0773,
+              "partial": 0.1153,
+              "none": 0.8074
+            },
+            "confidence": 0.4359,
+            "answer_confidence": 0.8074,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2653,
+              "partial": 0.2139,
+              "none": 0.5208
+            },
+            "confidence": 0.0701,
+            "answer_confidence": 0.5208,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1261,
+              "partial": 0.1351,
+              "none": 0.7388
+            },
+            "confidence": 0.3126,
+            "answer_confidence": 0.7388,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1851,
+              "partial": 0.1852,
+              "none": 0.6298
+            },
+            "confidence": 0.1665,
+            "answer_confidence": 0.6298,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5238,
+              "UNCERTAIN": 0.237,
+              "DROP": 0.2391
+            },
+            "confidence": 0.0697,
+            "answer_confidence": 0.5238,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3290,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c09",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Noah Smith; niche gaming, fitness; bio Vancouver-based creator who bridges gaming and fitness. I create content about…; based Vancouver, Canada; languages English; platforms youtube, tiktok; followers 120000; engagement 0.045; average views 210000; audience age 18-24, gender {\"female\":0.3,\"male\":0.7}, locations Canada, US; content gaming, fitness, tech; style quirky and authentic; rate card ₹5,000–₹15,000; past brands gaming peripherals, ergonomic furniture; interests gaming, fitness; posting frequency 4 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "none",
+        "confidence": 0.3842,
+        "sdk_confidence": 0.0069,
+        "probabilities": {
+          "strong": 0.2836,
+          "partial": 0.3323,
+          "none": 0.3842
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2836,
+            "partial": 0.3323,
+            "none": 0.3842
+          },
+          "confidence": 0.0069,
+          "answer_confidence": 0.3842,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "none",
+        "confidence": 0.3847,
+        "sdk_confidence": 0.0114,
+        "probabilities": {
+          "strong": 0.2623,
+          "partial": 0.353,
+          "none": 0.3847
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2623,
+            "partial": 0.353,
+            "none": 0.3847
+          },
+          "confidence": 0.0114,
+          "answer_confidence": 0.3847,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.6449,
+        "sdk_confidence": 0.1868,
+        "probabilities": {
+          "strong": 0.1534,
+          "partial": 0.2018,
+          "none": 0.6449
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1534,
+            "partial": 0.2018,
+            "none": 0.6449
+          },
+          "confidence": 0.1868,
+          "answer_confidence": 0.6449,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.5746,
+        "sdk_confidence": 0.1194,
+        "probabilities": {
+          "strong": 0.1681,
+          "partial": 0.2573,
+          "none": 0.5746
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1681,
+            "partial": 0.2573,
+            "none": 0.5746
+          },
+          "confidence": 0.1194,
+          "answer_confidence": 0.5746,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.5211,
+        "sdk_confidence": 0.068,
+        "probabilities": {
+          "strong": 0.2466,
+          "partial": 0.2322,
+          "none": 0.5211
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2466,
+            "partial": 0.2322,
+            "none": 0.5211
+          },
+          "confidence": 0.068,
+          "answer_confidence": 0.5211,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "none",
+        "confidence": 0.3957,
+        "sdk_confidence": 0.0085,
+        "probabilities": {
+          "strong": 0.3175,
+          "partial": 0.2868,
+          "none": 0.3957
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.3175,
+            "partial": 0.2868,
+            "none": 0.3957
+          },
+          "confidence": 0.0085,
+          "answer_confidence": 0.3957,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "none",
+        "confidence": 0.4657,
+        "sdk_confidence": 0.0354,
+        "probabilities": {
+          "strong": 0.2474,
+          "partial": 0.287,
+          "none": 0.4657
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2474,
+            "partial": 0.287,
+            "none": 0.4657
+          },
+          "confidence": 0.0354,
+          "answer_confidence": 0.4657,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5813,
+        "sdk_confidence": 0.117,
+        "probabilities": {
+          "KEEP": 0.5813,
+          "UNCERTAIN": 0.2135,
+          "DROP": 0.2052
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5813,
+            "UNCERTAIN": 0.2135,
+            "DROP": 0.2052
+          },
+          "confidence": 0.117,
+          "answer_confidence": 0.5813,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2836,
+              "partial": 0.3323,
+              "none": 0.3842
+            },
+            "confidence": 0.0069,
+            "answer_confidence": 0.3842,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2623,
+              "partial": 0.353,
+              "none": 0.3847
+            },
+            "confidence": 0.0114,
+            "answer_confidence": 0.3847,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1534,
+              "partial": 0.2018,
+              "none": 0.6449
+            },
+            "confidence": 0.1868,
+            "answer_confidence": 0.6449,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1681,
+              "partial": 0.2573,
+              "none": 0.5746
+            },
+            "confidence": 0.1194,
+            "answer_confidence": 0.5746,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2466,
+              "partial": 0.2322,
+              "none": 0.5211
+            },
+            "confidence": 0.068,
+            "answer_confidence": 0.5211,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.3175,
+              "partial": 0.2868,
+              "none": 0.3957
+            },
+            "confidence": 0.0085,
+            "answer_confidence": 0.3957,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2474,
+              "partial": 0.287,
+              "none": 0.4657
+            },
+            "confidence": 0.0354,
+            "answer_confidence": 0.4657,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5813,
+              "UNCERTAIN": 0.2135,
+              "DROP": 0.2052
+            },
+            "confidence": 0.117,
+            "answer_confidence": 0.5813,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3194,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c10",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "partial",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "partial",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Linda Johansson; niche gaming, parenting, family; bio Stockholm-based mom blogger who covers family-friendly gaming. I review…; based Stockholm, Sweden; languages Swedish, English; platforms youtube, instagram; followers 85000; engagement 0.035; average views 130000; audience age 30-44, gender {\"female\":0.88,\"male\":0.12}, locations Sweden, Norway, Denmark; content family gaming, parenting, education; style warm and trustworthy; rate card ₹5,000–₹15,000; past brands family brands, educational games; interests family, parenting; posting frequency 3 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "none",
+        "confidence": 0.4937,
+        "sdk_confidence": 0.0575,
+        "probabilities": {
+          "strong": 0.2065,
+          "partial": 0.2998,
+          "none": 0.4937
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2065,
+            "partial": 0.2998,
+            "none": 0.4937
+          },
+          "confidence": 0.0575,
+          "answer_confidence": 0.4937,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "none",
+        "confidence": 0.4204,
+        "sdk_confidence": 0.0194,
+        "probabilities": {
+          "strong": 0.2521,
+          "partial": 0.3275,
+          "none": 0.4204
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2521,
+            "partial": 0.3275,
+            "none": 0.4204
+          },
+          "confidence": 0.0194,
+          "answer_confidence": 0.4204,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.6893,
+        "sdk_confidence": 0.2439,
+        "probabilities": {
+          "strong": 0.1296,
+          "partial": 0.1811,
+          "none": 0.6893
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1296,
+            "partial": 0.1811,
+            "none": 0.6893
+          },
+          "confidence": 0.2439,
+          "answer_confidence": 0.6893,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.6702,
+        "sdk_confidence": 0.2265,
+        "probabilities": {
+          "strong": 0.1191,
+          "partial": 0.2106,
+          "none": 0.6702
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1191,
+            "partial": 0.2106,
+            "none": 0.6702
+          },
+          "confidence": 0.2265,
+          "answer_confidence": 0.6702,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.5729,
+        "sdk_confidence": 0.1113,
+        "probabilities": {
+          "strong": 0.1919,
+          "partial": 0.2352,
+          "none": 0.5729
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1919,
+            "partial": 0.2352,
+            "none": 0.5729
+          },
+          "confidence": 0.1113,
+          "answer_confidence": 0.5729,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "none",
+        "confidence": 0.4644,
+        "sdk_confidence": 0.0335,
+        "probabilities": {
+          "strong": 0.2656,
+          "partial": 0.2699,
+          "none": 0.4644
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2656,
+            "partial": 0.2699,
+            "none": 0.4644
+          },
+          "confidence": 0.0335,
+          "answer_confidence": 0.4644,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "none",
+        "confidence": 0.5312,
+        "sdk_confidence": 0.0758,
+        "probabilities": {
+          "strong": 0.2204,
+          "partial": 0.2484,
+          "none": 0.5312
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2204,
+            "partial": 0.2484,
+            "none": 0.5312
+          },
+          "confidence": 0.0758,
+          "answer_confidence": 0.5312,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5607,
+        "sdk_confidence": 0.1006,
+        "probabilities": {
+          "KEEP": 0.5607,
+          "UNCERTAIN": 0.2414,
+          "DROP": 0.1979
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5607,
+            "UNCERTAIN": 0.2414,
+            "DROP": 0.1979
+          },
+          "confidence": 0.1006,
+          "answer_confidence": 0.5607,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2065,
+              "partial": 0.2998,
+              "none": 0.4937
+            },
+            "confidence": 0.0575,
+            "answer_confidence": 0.4937,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2521,
+              "partial": 0.3275,
+              "none": 0.4204
+            },
+            "confidence": 0.0194,
+            "answer_confidence": 0.4204,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1296,
+              "partial": 0.1811,
+              "none": 0.6893
+            },
+            "confidence": 0.2439,
+            "answer_confidence": 0.6893,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1191,
+              "partial": 0.2106,
+              "none": 0.6702
+            },
+            "confidence": 0.2265,
+            "answer_confidence": 0.6702,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1919,
+              "partial": 0.2352,
+              "none": 0.5729
+            },
+            "confidence": 0.1113,
+            "answer_confidence": 0.5729,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2656,
+              "partial": 0.2699,
+              "none": 0.4644
+            },
+            "confidence": 0.0335,
+            "answer_confidence": 0.4644,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2204,
+              "partial": 0.2484,
+              "none": 0.5312
+            },
+            "confidence": 0.0758,
+            "answer_confidence": 0.5312,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5607,
+              "UNCERTAIN": 0.2414,
+              "DROP": 0.1979
+            },
+            "confidence": 0.1006,
+            "answer_confidence": 0.5607,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3234,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c11",
+    "ground_truth_label": "poor",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "partial",
+      "final_decision": "DROP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "partial",
+      "final_decision": "DROP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Liam O'Brien; niche food, travel, photography; bio Dublin-based food photographer and travel creator. I create visually stunning…; based Dublin, Ireland; languages English; platforms instagram, youtube, tiktok; followers 230000; engagement 0.044; average views 410000; audience age 25-34, gender {\"female\":0.45,\"male\":0.55}, locations Ireland, UK, US; content food, travel, photography; style adventurous and cinematic; rate card ₹15,000–₹40,000; past brands food brands, travel companies, camera gear; interests food, travel; posting frequency 5 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "partial",
+        "confidence": 0.4047,
+        "sdk_confidence": 0.013,
+        "probabilities": {
+          "strong": 0.2672,
+          "partial": 0.4047,
+          "none": 0.3281
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "strong": 0.2672,
+            "partial": 0.4047,
+            "none": 0.3281
+          },
+          "confidence": 0.013,
+          "answer_confidence": 0.4047,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "partial",
+        "confidence": 0.3864,
+        "sdk_confidence": 0.0199,
+        "probabilities": {
+          "strong": 0.2377,
+          "partial": 0.3864,
+          "none": 0.3759
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "strong": 0.2377,
+            "partial": 0.3864,
+            "none": 0.3759
+          },
+          "confidence": 0.0199,
+          "answer_confidence": 0.3864,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.6254,
+        "sdk_confidence": 0.1697,
+        "probabilities": {
+          "strong": 0.1468,
+          "partial": 0.2277,
+          "none": 0.6254
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.1468,
+            "partial": 0.2277,
+            "none": 0.6254
+          },
+          "confidence": 0.1697,
+          "answer_confidence": 0.6254,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.4136,
+        "sdk_confidence": 0.0323,
+        "probabilities": {
+          "strong": 0.2143,
+          "partial": 0.3722,
+          "none": 0.4136
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2143,
+            "partial": 0.3722,
+            "none": 0.4136
+          },
+          "confidence": 0.0323,
+          "answer_confidence": 0.4136,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.46,
+        "sdk_confidence": 0.0316,
+        "probabilities": {
+          "strong": 0.2599,
+          "partial": 0.2801,
+          "none": 0.46
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2599,
+            "partial": 0.2801,
+            "none": 0.46
+          },
+          "confidence": 0.0316,
+          "answer_confidence": 0.46,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "strong",
+        "confidence": 0.3552,
+        "sdk_confidence": 0.0012,
+        "probabilities": {
+          "strong": 0.3552,
+          "partial": 0.332,
+          "none": 0.3128
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.3552,
+            "partial": 0.332,
+            "none": 0.3128
+          },
+          "confidence": 0.0012,
+          "answer_confidence": 0.3552,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "strong",
+        "confidence": 0.3379,
+        "sdk_confidence": 0.0,
+        "probabilities": {
+          "strong": 0.3379,
+          "partial": 0.3327,
+          "none": 0.3294
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.3379,
+            "partial": 0.3327,
+            "none": 0.3294
+          },
+          "confidence": 0.0,
+          "answer_confidence": 0.3379,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.6066,
+        "sdk_confidence": 0.1457,
+        "probabilities": {
+          "KEEP": 0.6066,
+          "UNCERTAIN": 0.1673,
+          "DROP": 0.2261
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.6066,
+            "UNCERTAIN": 0.1673,
+            "DROP": 0.2261
+          },
+          "confidence": 0.1457,
+          "answer_confidence": 0.6066,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "partial",
+            "probabilities": {
+              "strong": 0.2672,
+              "partial": 0.4047,
+              "none": 0.3281
+            },
+            "confidence": 0.013,
+            "answer_confidence": 0.4047,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "partial",
+            "probabilities": {
+              "strong": 0.2377,
+              "partial": 0.3864,
+              "none": 0.3759
+            },
+            "confidence": 0.0199,
+            "answer_confidence": 0.3864,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.1468,
+              "partial": 0.2277,
+              "none": 0.6254
+            },
+            "confidence": 0.1697,
+            "answer_confidence": 0.6254,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2143,
+              "partial": 0.3722,
+              "none": 0.4136
+            },
+            "confidence": 0.0323,
+            "answer_confidence": 0.4136,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2599,
+              "partial": 0.2801,
+              "none": 0.46
+            },
+            "confidence": 0.0316,
+            "answer_confidence": 0.46,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.3552,
+              "partial": 0.332,
+              "none": 0.3128
+            },
+            "confidence": 0.0012,
+            "answer_confidence": 0.3552,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.3379,
+              "partial": 0.3327,
+              "none": 0.3294
+            },
+            "confidence": 0.0,
+            "answer_confidence": 0.3379,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.6066,
+              "UNCERTAIN": 0.1673,
+              "DROP": 0.2261
+            },
+            "confidence": 0.1457,
+            "answer_confidence": 0.6066,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3274,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  },
+  {
+    "brand_id": "b01",
+    "creator_id": "c12",
+    "ground_truth_label": "good",
+    "ground_truth": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "KEEP"
+    },
+    "ground_truth_answers": {
+      "budget_fit": "strong",
+      "creator_size_fit": "strong",
+      "campaign_fit": "strong",
+      "final_decision": "KEEP"
+    },
+    "success": true,
+    "state": {
+      "brand": "Brand FitNova; industry Fitness & Wellness; product Home workout equipment and resistance bands; goal Drive awareness and sales of affordable home fitness equipment among young Indian women; brief FitNova launches a new line of compact home…; target Young Indian women aged 18-30 interested in fitness…; age 18-30; gender female; target markets India, UAE, Singapore; required niches fitness; preferred niches fitness, nutrition, wellness, yoga; follower bounds 50000-500000 (mid-tier); budget 300000 INR; content workout, nutrition, healthy lifestyle; platforms instagram, youtube; tone energetic and motivational; mandatory requirements base: India or South Asia; language: English or Hindi; fitness content; preferred traits authentic, motivational, relatable, female-led; excluded traits luxury-focused, male-dominated audience, non-English content.",
+      "creator": "Creator Ananya Rao; niche food, fitness, nutrition; bio Delhi-based nutritionist and recipe creator. I create healthy Indian recipes,…; based Delhi, India; languages Hindi, English; platforms instagram, youtube; followers 175000; engagement 0.047; average views 310000; audience age 25-34, gender {\"female\":0.75,\"male\":0.25}, locations India, Singapore, UAE; content healthy food, nutrition, fitness; style educational and warm; rate card ₹10,000–₹30,000; past brands health food, nutrition supplements, cooking appliances; interests cooking, nutrition, recipes; posting frequency 5 posts/week."
+    },
+    "questions": {
+      "niche_fit": {
+        "type": "choice",
+        "instructions": "How well does this creator's content niche fit the brand's required and preferred creator niches?",
+        "criteria": {
+          "strong": "The creator directly matches one or more required niches and is clearly relevant to the campaign.",
+          "partial": "The creator has meaningful adjacent relevance but does not strongly satisfy the required niche.",
+          "none": "The creator's niche is unrelated to the brand or campaign."
+        }
+      },
+      "audience_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's audience match the brand's target audience?",
+        "criteria": {
+          "strong": "Audience demographics, interests, and/or locations strongly match the target audience.",
+          "partial": "There is meaningful overlap but also important uncertainty or mismatch.",
+          "none": "The creator's audience is clearly different from the target audience."
+        }
+      },
+      "geography_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's geographic requirements?",
+        "criteria": {
+          "strong": "Creator location and/or audience location clearly satisfies the target geography.",
+          "partial": "There is some geographic relevance but the requirement is not fully satisfied.",
+          "none": "The creator is clearly outside the required geography and has no meaningful audience match there."
+        }
+      },
+      "platform_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator satisfy the brand's required platforms and content formats?",
+        "criteria": {
+          "strong": "The creator actively uses the required platform(s) and can produce the requested content.",
+          "partial": "There is some platform/content compatibility but not a complete match.",
+          "none": "The creator does not use the required platform(s) or cannot reasonably produce the requested format."
+        }
+      },
+      "budget_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's rate card fit the campaign budget?",
+        "criteria": {
+          "strong": "The creator's pricing clearly fits within the campaign budget.",
+          "partial": "Pricing is uncertain, partially compatible, or cannot be directly compared because currencies/requirements are unclear.",
+          "none": "The creator's pricing clearly exceeds the campaign budget."
+        }
+      },
+      "creator_size_fit": {
+        "type": "choice",
+        "instructions": "How well does the creator's follower size and reach fit the campaign's creator-size requirements?",
+        "criteria": {
+          "strong": "Creator size clearly falls within the preferred or required range.",
+          "partial": "Creator size is somewhat outside the preferred range but may still be usable.",
+          "none": "Creator size clearly violates a mandatory creator-size requirement."
+        }
+      },
+      "campaign_fit": {
+        "type": "choice",
+        "instructions": "Considering the campaign goal, product, content style, creator interests, and previous brand categories, how suitable is this creator for the campaign?",
+        "criteria": {
+          "strong": "The creator is clearly suitable for the campaign and can naturally promote the product.",
+          "partial": "The creator has meaningful potential but there are uncertainties or weaker alignment.",
+          "none": "The creator is clearly unsuitable for the campaign."
+        }
+      },
+      "final_decision": {
+        "type": "choice",
+        "instructions": "Should this creator remain in the brand's candidate feed? Consider hard constraints separately from soft preferences.",
+        "criteria": {
+          "KEEP": "The creator is a strong realistic candidate. The creator satisfies important campaign requirements and has no clear hard-constraint failure.",
+          "UNCERTAIN": "The creator has meaningful relevance but one or more important factors are uncertain, partially matched, or require deeper reasoning.",
+          "DROP": "The creator has a clear mismatch or hard-constraint failure that makes them unsuitable for this campaign."
+        }
+      }
+    },
+    "laya": {
+      "niche_fit": {
+        "choice": "strong",
+        "confidence": 0.4172,
+        "sdk_confidence": 0.0252,
+        "probabilities": {
+          "strong": 0.4172,
+          "partial": 0.3514,
+          "none": 0.2314
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4172,
+            "partial": 0.3514,
+            "none": 0.2314
+          },
+          "confidence": 0.0252,
+          "answer_confidence": 0.4172,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "audience_fit": {
+        "choice": "partial",
+        "confidence": 0.3937,
+        "sdk_confidence": 0.008,
+        "probabilities": {
+          "strong": 0.3191,
+          "partial": 0.3937,
+          "none": 0.2871
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "partial",
+          "probabilities": {
+            "strong": 0.3191,
+            "partial": 0.3937,
+            "none": 0.2871
+          },
+          "confidence": 0.008,
+          "answer_confidence": 0.3937,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "geography_fit": {
+        "choice": "none",
+        "confidence": 0.4337,
+        "sdk_confidence": 0.0207,
+        "probabilities": {
+          "strong": 0.2665,
+          "partial": 0.2998,
+          "none": 0.4337
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2665,
+            "partial": 0.2998,
+            "none": 0.4337
+          },
+          "confidence": 0.0207,
+          "answer_confidence": 0.4337,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "platform_fit": {
+        "choice": "none",
+        "confidence": 0.3735,
+        "sdk_confidence": 0.009,
+        "probabilities": {
+          "strong": 0.2689,
+          "partial": 0.3577,
+          "none": 0.3735
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2689,
+            "partial": 0.3577,
+            "none": 0.3735
+          },
+          "confidence": 0.009,
+          "answer_confidence": 0.3735,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "budget_fit": {
+        "choice": "none",
+        "confidence": 0.4213,
+        "sdk_confidence": 0.0154,
+        "probabilities": {
+          "strong": 0.2963,
+          "partial": 0.2824,
+          "none": 0.4213
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "none",
+          "probabilities": {
+            "strong": 0.2963,
+            "partial": 0.2824,
+            "none": 0.4213
+          },
+          "confidence": 0.0154,
+          "answer_confidence": 0.4213,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "creator_size_fit": {
+        "choice": "strong",
+        "confidence": 0.4264,
+        "sdk_confidence": 0.0235,
+        "probabilities": {
+          "strong": 0.4264,
+          "partial": 0.3318,
+          "none": 0.2418
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.4264,
+            "partial": 0.3318,
+            "none": 0.2418
+          },
+          "confidence": 0.0235,
+          "answer_confidence": 0.4264,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "campaign_fit": {
+        "choice": "strong",
+        "confidence": 0.3765,
+        "sdk_confidence": 0.0075,
+        "probabilities": {
+          "strong": 0.3765,
+          "partial": 0.3476,
+          "none": 0.2759
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "strong",
+          "probabilities": {
+            "strong": 0.3765,
+            "partial": 0.3476,
+            "none": 0.2759
+          },
+          "confidence": 0.0075,
+          "answer_confidence": 0.3765,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "final_decision": {
+        "choice": "KEEP",
+        "confidence": 0.5756,
+        "sdk_confidence": 0.1125,
+        "probabilities": {
+          "KEEP": 0.5756,
+          "UNCERTAIN": 0.2252,
+          "DROP": 0.1992
+        },
+        "raw_answer": {
+          "type": "choice",
+          "choice": "KEEP",
+          "probabilities": {
+            "KEEP": 0.5756,
+            "UNCERTAIN": 0.2252,
+            "DROP": 0.1992
+          },
+          "confidence": 0.1125,
+          "answer_confidence": 0.5756,
+          "action": {
+            "act_probability": 1.0
+          }
+        }
+      },
+      "raw_response": {
+        "model": "laya-rl-agent",
+        "answers": {
+          "niche_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4172,
+              "partial": 0.3514,
+              "none": 0.2314
+            },
+            "confidence": 0.0252,
+            "answer_confidence": 0.4172,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "audience_fit": {
+            "type": "choice",
+            "choice": "partial",
+            "probabilities": {
+              "strong": 0.3191,
+              "partial": 0.3937,
+              "none": 0.2871
+            },
+            "confidence": 0.008,
+            "answer_confidence": 0.3937,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "geography_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2665,
+              "partial": 0.2998,
+              "none": 0.4337
+            },
+            "confidence": 0.0207,
+            "answer_confidence": 0.4337,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "platform_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2689,
+              "partial": 0.3577,
+              "none": 0.3735
+            },
+            "confidence": 0.009,
+            "answer_confidence": 0.3735,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "budget_fit": {
+            "type": "choice",
+            "choice": "none",
+            "probabilities": {
+              "strong": 0.2963,
+              "partial": 0.2824,
+              "none": 0.4213
+            },
+            "confidence": 0.0154,
+            "answer_confidence": 0.4213,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "creator_size_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.4264,
+              "partial": 0.3318,
+              "none": 0.2418
+            },
+            "confidence": 0.0235,
+            "answer_confidence": 0.4264,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "campaign_fit": {
+            "type": "choice",
+            "choice": "strong",
+            "probabilities": {
+              "strong": 0.3765,
+              "partial": 0.3476,
+              "none": 0.2759
+            },
+            "confidence": 0.0075,
+            "answer_confidence": 0.3765,
+            "action": {
+              "act_probability": 1.0
+            }
+          },
+          "final_decision": {
+            "type": "choice",
+            "choice": "KEEP",
+            "probabilities": {
+              "KEEP": 0.5756,
+              "UNCERTAIN": 0.2252,
+              "DROP": 0.1992
+            },
+            "confidence": 0.1125,
+            "answer_confidence": 0.5756,
+            "action": {
+              "act_probability": 1.0
+            }
+          }
+        },
+        "usage": {
+          "input_tokens": 3290,
+          "output_tokens": 0
+        }
+      }
+    },
+    "model": "convaiinnovations/laya"
+  }
+]
