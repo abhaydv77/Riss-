@@ -1,0 +1,340 @@
+{
+  "system": {
+    "embedding_model": "all-MiniLM-L6-v2",
+    "vector_database": "ChromaDB (persistent, /Volumes/mac/Riss/data/chroma)",
+    "collection": "creators",
+    "num_brands": 10,
+    "num_creators": 40,
+    "k": 3,
+    "total_ground_truth_pairs": 400
+  },
+  "aggregate_metrics": {
+    "strict_precision_at_3": 0.5,
+    "relaxed_precision_at_3": 0.7,
+    "good_hit_rate_at_3": 0.8,
+    "good_or_maybe_hit_rate_at_3": 0.9,
+    "mrr_at_3": 0.7
+  },
+  "per_brand": [
+    {
+      "brand_id": "b01",
+      "brand_name": "FitNova",
+      "strict_precision_at_3": 0.0,
+      "relaxed_precision_at_3": 0.0,
+      "good_hit": 0,
+      "good_or_maybe_hit": 0,
+      "mrr_at_3": 0.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c20",
+          "name": "David Kim",
+          "distance": 0.3235,
+          "label": "poor"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c31",
+          "name": "Aarav Mehta",
+          "distance": 0.3279,
+          "label": "poor"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c37",
+          "name": "Amira Okafor",
+          "distance": 0.3682,
+          "label": "poor"
+        }
+      ]
+    },
+    {
+      "brand_id": "b02",
+      "brand_name": "GlowEssence",
+      "strict_precision_at_3": 0.3333333333333333,
+      "relaxed_precision_at_3": 0.3333333333333333,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c05",
+          "name": "Sofia Chen",
+          "distance": 0.3135,
+          "label": "good"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c15",
+          "name": "Zoe Kim",
+          "distance": 0.4082,
+          "label": "poor"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c39",
+          "name": "Zara Khan",
+          "distance": 0.4128,
+          "label": "poor"
+        }
+      ]
+    },
+    {
+      "brand_id": "b03",
+      "brand_name": "GameVault",
+      "strict_precision_at_3": 0.6666666666666666,
+      "relaxed_precision_at_3": 0.6666666666666666,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c09",
+          "name": "Noah Smith",
+          "distance": 0.4286,
+          "label": "good"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c10",
+          "name": "Linda Johansson",
+          "distance": 0.443,
+          "label": "poor"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c33",
+          "name": "Kai Nakamura",
+          "distance": 0.464,
+          "label": "good"
+        }
+      ]
+    },
+    {
+      "brand_id": "b04",
+      "brand_name": "AthleVibe",
+      "strict_precision_at_3": 0.3333333333333333,
+      "relaxed_precision_at_3": 0.3333333333333333,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c18",
+          "name": "Maya Singh",
+          "distance": 0.3082,
+          "label": "good"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c19",
+          "name": "Finn O'Connor",
+          "distance": 0.4117,
+          "label": "poor"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c06",
+          "name": "Meera Patel",
+          "distance": 0.4386,
+          "label": "poor"
+        }
+      ]
+    },
+    {
+      "brand_id": "b05",
+      "brand_name": "MoneyWise",
+      "strict_precision_at_3": 1.0,
+      "relaxed_precision_at_3": 1.0,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c29",
+          "name": "Leo Zhang",
+          "distance": 0.4563,
+          "label": "good"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c16",
+          "name": "Walter Chen",
+          "distance": 0.524,
+          "label": "good"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c14",
+          "name": "Ethan Park",
+          "distance": 0.5283,
+          "label": "good"
+        }
+      ]
+    },
+    {
+      "brand_id": "b06",
+      "brand_name": "PurePlate",
+      "strict_precision_at_3": 1.0,
+      "relaxed_precision_at_3": 1.0,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c12",
+          "name": "Ananya Rao",
+          "distance": 0.4788,
+          "label": "good"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c35",
+          "name": "Priya Nair",
+          "distance": 0.5143,
+          "label": "good"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c40",
+          "name": "Ravi Patel",
+          "distance": 0.5152,
+          "label": "good"
+        }
+      ]
+    },
+    {
+      "brand_id": "b07",
+      "brand_name": "Elysian Travel",
+      "strict_precision_at_3": 0.3333333333333333,
+      "relaxed_precision_at_3": 1.0,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c28",
+          "name": "Chloe Martin",
+          "distance": 0.448,
+          "label": "maybe"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c13",
+          "name": "Henrik Larsen",
+          "distance": 0.451,
+          "label": "good"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c22",
+          "name": "Victoria Stone",
+          "distance": 0.4594,
+          "label": "maybe"
+        }
+      ]
+    },
+    {
+      "brand_id": "b08",
+      "brand_name": "TinyNest",
+      "strict_precision_at_3": 0.0,
+      "relaxed_precision_at_3": 0.6666666666666666,
+      "good_hit": 0,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 0.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c21",
+          "name": "Hana Ali",
+          "distance": 0.4928,
+          "label": "maybe"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c30",
+          "name": "Nora Johansson",
+          "distance": 0.5096,
+          "label": "maybe"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c15",
+          "name": "Zoe Kim",
+          "distance": 0.5711,
+          "label": "poor"
+        }
+      ]
+    },
+    {
+      "brand_id": "b09",
+      "brand_name": "NovaTech",
+      "strict_precision_at_3": 1.0,
+      "relaxed_precision_at_3": 1.0,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 1.0,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c14",
+          "name": "Ethan Park",
+          "distance": 0.4427,
+          "label": "good"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c20",
+          "name": "David Kim",
+          "distance": 0.4567,
+          "label": "good"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c38",
+          "name": "Tom Wilson",
+          "distance": 0.4603,
+          "label": "good"
+        }
+      ]
+    },
+    {
+      "brand_id": "b10",
+      "brand_name": "VitalityCo",
+      "strict_precision_at_3": 0.3333333333333333,
+      "relaxed_precision_at_3": 1.0,
+      "good_hit": 1,
+      "good_or_maybe_hit": 1,
+      "mrr_at_3": 0.5,
+      "retrieved": [
+        {
+          "rank": 1,
+          "creator_id": "c24",
+          "name": "Grace Murray",
+          "distance": 0.426,
+          "label": "maybe"
+        },
+        {
+          "rank": 2,
+          "creator_id": "c34",
+          "name": "Lena Weber",
+          "distance": 0.4925,
+          "label": "good"
+        },
+        {
+          "rank": 3,
+          "creator_id": "c26",
+          "name": "Isabella Rossi",
+          "distance": 0.4962,
+          "label": "maybe"
+        }
+      ]
+    }
+  ]
+}
