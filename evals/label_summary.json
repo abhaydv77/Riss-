@@ -1,0 +1,11 @@
+{
+  "total_pairs": 400,
+  "good": 31,
+  "maybe": 31,
+  "poor": 338,
+  "distribution": {
+    "good_percent": 7.75,
+    "maybe_percent": 7.75,
+    "poor_percent": 84.5
+  }
+}
